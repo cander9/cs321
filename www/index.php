@@ -5,7 +5,7 @@
 
 <html lang = “en”>
 <head>
-  <link href=”http://anderscr.cs321.simmons.edu/css/style.css” href=”style.css”>
+  <link rel=”stylesheet” href=”http://anderscr.cs321.simmons.edu/css/style.css”>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
 </head>
   <nav class = "header">         
