@@ -5,8 +5,8 @@
 
 <html lang = “en”>
 <head>
-  <link href=”css/style.css” rel=”stylesheet” >
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
+  <link href=”/css/style.css” rel=”stylesheet” >
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">-->
 </head>
   <nav class = "header">         
     <a><h2>Name</h2></a>
