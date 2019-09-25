@@ -1,0 +1,97 @@
+/*
+Author:  Caitlin Anderson
+Purpose: CS321 Assignment 2
+*/
+
+/*font stuff*/
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.05em;
+}
+
+/*navigation bar*/
+nav {
+  overflow: hidden;
+  padding: 10px 10px;
+  /*background-color: #EFEFF0;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+nav a h2 {
+  float: left;
+  padding: 0px 16px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+} 
+
+li a:hover {
+  background-color: #EFEFF0;
+}
+/*Navigation CSS Source:  https://www.w3schools.com/css/css_navbar.asp*/
+
+header {
+  padding: 0px 16px;
+  max-width: 990px;
+  /*background-color: #EFEFF0;*/
+}
+
+section {
+  padding: 15px 16px;
+  /*background-color: #EFEFF0;*/
+}
+
+footer {
+  padding: 15px 16px;
+  font-size: 0.75em;  
+  max-width: 990px;
+}
+
+.contact {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.contact:hover {
+  background-color: #EFEFF0;
+}
+
+.container {
+  position:relative;
+  display: block;
+  vertical-align: middle;
+  padding: 15px 16px;
+} 
