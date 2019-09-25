@@ -8,7 +8,7 @@ STOP
 
 <html lang = “en”>
 <head>
-  <link rel=”stylesheet” href=”style.css”>
+  <link href=”http://anderscr.cs321.simmons.edu/css/style.css” href=”style.css”>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
 </head>
   <nav class = "header">         
