@@ -40,5 +40,6 @@
     <a>copyright information</a>
     <a href = "contact" class = "contact">Contact</a>
   </footer>
-<!--</html> I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
+<!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
+       </html>
  
