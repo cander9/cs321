@@ -7,7 +7,7 @@
 <head>
   <link rel=”stylesheet” href=”style.css”>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
-<!--</head>-->
+</head>
   <nav class = "header">         
     <a><h2>Name</h2></a>
     <ul>
