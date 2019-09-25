@@ -5,7 +5,7 @@
 
 <html lang = “en”>
 <head>
-  <link href=”/css/style.css” rel=”stylesheet” >
+  <link href=”www/css/style.css” rel=”stylesheet” >
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
 </head>
   <nav class = "header">         
