@@ -1,7 +1,7 @@
 <!doctype html>
 
 <!-- Author:  Caitlin Anderson
-       Purpose: CS321 Assignment 2 --> 
+     Purpose: CS321 Assignment 2 --> 
 
 <html lang = “en”>
 <head>
