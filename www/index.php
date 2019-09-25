@@ -35,7 +35,7 @@
        <img src="http://anderscr.cs321.simmons.edu/images/IMG2.JPG" alt="Piece3" width = 300 class = "rotate">
 <a class = "closerLook" href = "closer_look3">Closer Look</a>
   </li>
-  </ul><!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp--eventually I want to be able to click on the img rather than have a separate button-->
+  </ul><!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
   <footer>
     <a>copyright information</a>
     <a href = "contact" class = "contact">Contact</a>
