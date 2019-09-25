@@ -10,7 +10,7 @@ STOP
 <head>
   <link rel=”stylesheet” href=”style.css”>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
-</head>
+<!--</head>-->
   <nav class = "header">         
     <a><h2>Name</h2></a>
     <ul>
@@ -43,6 +43,6 @@ STOP
     <a>copyright information</a>
     <a href = "contact" class = "contact">Contact</a>
   </footer>
-</html><!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
+<!--</html> I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
  
 >>>>>>> 9b54b5eef0f37384b5f5476799ad564345227fa9
