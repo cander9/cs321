@@ -4,10 +4,10 @@
      Purpose: CS321 Assignment 2 --> 
 
 <html lang = “en”>
-<!--<head>-->
-  <link rel=”stylesheet” href=”/css/style.css”>
+<head>
+  <link href=”/css/style.css” rel=”stylesheet” >
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
-<!--</head>-->
+</head>
   <nav class = "header">         
     <a><h2>Name</h2></a>
     <ul>
