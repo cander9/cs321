@@ -1,10 +1,11 @@
 <!doctype html>
 
+<html lang = "en">
+<head>
+     
 <!-- Author:  Caitlin Anderson
      Purpose: CS321 Assignment 2 --> 
 
-<html lang = "en">
-<head>
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
 </head>
