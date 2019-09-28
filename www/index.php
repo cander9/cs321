@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
-  <script src="/javascript/myscripts.js"></script>
+  <script type="text/javascript" src="/javascript/myscripts.js"></script>
 </head>
   <nav class = "header">         
     <a><h2>Name</h2></a>
