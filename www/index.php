@@ -25,7 +25,7 @@
  <ul>
   <li class="container">
        <img src="http://anderscr.cs321.simmons.edu/images/IMG01.JPG" alt="Piece1" width = 300>
-    <a class = "closerLook" href = "closer_look1">Closer Look</a>
+    <a class = "closerLook" href = "http://anderscr.cs321.simmons.edu/closer_look/gallery1A.php">Closer Look</a>
   </li>
   <li class= "container" >
        <img src="http://anderscr.cs321.simmons.edu/images/IMG1.JPG" alt="Piece2" width = 300 class = "rotate">
