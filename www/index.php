@@ -29,7 +29,7 @@
   </li>
   <li class= "container" >
        <img src="http://anderscr.cs321.simmons.edu/images/IMG1.JPG" alt="Piece2" width = 300 class = "rotate">
-     <a class = "closerLook" href = "closer_look2">Closer Look</a>
+     <a class = "closerLook" href = "http://anderscr.cs321.simmons.edu/closer_look/gallery1B.php">Closer Look</a>
   </li>  
   <li class="container">
        <img src="http://anderscr.cs321.simmons.edu/images/IMG2.JPG" alt="Piece3" width = 300 class = "rotate">
