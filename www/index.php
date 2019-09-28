@@ -33,7 +33,7 @@
   </li>  
   <li class="container">
        <img src="http://anderscr.cs321.simmons.edu/images/IMG2.JPG" alt="Piece3" width = 300 class = "rotate">
-<a class = "closerLook" href = "closer_look3">Closer Look</a>
+<a class = "closerLook" href = "http://anderscr.cs321.simmons.edu/closer_look/gallery1C.php">Closer Look</a>
   </li>
   </ul><!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
   <footer>
