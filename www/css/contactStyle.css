@@ -145,7 +145,28 @@ fieldset p label {
   left: 10px;
 }
 
+.what {
+  min-width: 915px;
+  text-align: left;
+}
+
+.describe {
+  min-width: 915px;
+  height: 100px;
+  text-align: left;
+}
+
 input:focus{
+  outline: 0.1px solid #CECECE;
+  background-color: #F7F7F7;
+}
+
+textarea {
+  border-color: #CECECE;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea:focus{
   outline: 0.1px solid #CECECE;
   background-color: #F7F7F7;
 }
