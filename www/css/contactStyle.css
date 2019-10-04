@@ -108,9 +108,26 @@ fieldset {
 }
 
 p button {
+  background-color: white;  
+  color: black;
+  border: none;
+  padding: 0px 22px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
   position: relative;
   top: 50px;
   left: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  outline: 0.1px solid #CECECE;
+}
+
+p button:focus{
+  background-color: #EFEFF0;
 }
 
 legend {
@@ -129,6 +146,5 @@ fieldset p label {
 }
 
 input:focus{
-  outline: 0.5px solid teal;
+  outline: 0.1px solid grey;
 }
-
