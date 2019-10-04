@@ -23,7 +23,7 @@
 
   <footer>
     <a>copyright information</a>
-    <a href = ""http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
+    <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
   </footer>
 <!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
        </html>
