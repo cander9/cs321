@@ -6,7 +6,7 @@
 <!-- Author:  Caitlin Anderson
      Purpose: CS321 Assignment 2 --> 
 
-  <link rel="stylesheet" href="/css/contactStyle.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
   <script src="/javascript/myscripts.js"></script>
 </head>
@@ -70,7 +70,7 @@
 </label>
 </p>
 </fieldset>
-<p><button class = "checkout" >Checkout</button></p>
+<p><button class = "checkout" >Submit</button></p>
   <footer>
     <a>copyright information</a>
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
