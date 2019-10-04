@@ -60,13 +60,13 @@
 }>
 <legend>Description</legend>
 <p>
-<label>What 
-<input type="text" name="card_type" required>
+<label>What : 
+  <textarea type="text" class= "what" name="card_type" required></textarea>
 </label>
 </p>
 <p>
-<label>Describe
-<input type="text" name="card_number" required>
+<label>Describe :
+<textarea type="text" class= "describe" name="card_number" required></textarea>
 </label>
 </p>
 </fieldset>
