@@ -42,12 +42,4 @@
     <a href = "contact" class = "contact">Contact</a>
 </footer>
 <!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
-<script src="/javascript/myscripts.js"></script>
-<script>
-    $("#IMG01") .mouseover(function() {
-        this.src= "http://anderscr.cs321.simmons.edu/images/CloserLook1.png"
-    }) .mouseout(function () {
-        this.src= "http://anderscr.cs321.simmons.edu/images/IMG01.JPG"
-    });
-</script>
 </html>
