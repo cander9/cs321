@@ -20,10 +20,60 @@
     </ul>
 <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
   </nav>   <!-- I want the nav as a seperate column to the left -->
+<p>
+  <label>Name
+    <input type="text" name="customer_name" required>
+  </label> 
+</p>
 
+<p>
+  <label>Phone 
+    <input type="tel" name="phone_number">
+  </label>
+</p>
+
+<p>
+  <label>Email 
+    <input type="email" name="email_address">
+  </label>
+</p>
+<fieldset class = "f1">
+<legend>Shipping Address</legend>  
+<p>
+  <label>Name
+    <input type="text" name="customer_name" required>
+  </label> 
+</p>
+<p>
+<label>Address Line 1
+<input type="text" name="address_line1" required>
+</label>
+</p>
+<p>
+<label>Address Line 2
+<input type="text" name="address_line2">
+</label>
+</p>
+</fieldset>  
+<fieldset class = "f2" {
+  top: 15px;
+}>
+<legend>Description</legend>
+<p>
+<label>What 
+<input type="text" name="card_type" required>
+</label>
+</p>
+<p>
+<label>Describe
+<input type="text" name="card_number" required>
+</label>
+</p>
+</fieldset>
+<p><button class = "checkout" >Checkout</button></p>
   <footer>
     <a>copyright information</a>
-    <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
+    <a href = "contact" class = "contact">Contact Me</a>
   </footer>
 <!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
        </html>
