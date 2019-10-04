@@ -27,6 +27,6 @@
   </section>   <!-- will be a picture of the art in final, I want it centered and big-->
   <footer>
     <a>copyright information</a>
-    <a href = "contact" class = "contact">Contact</a>
+    <a href = ""http://anderscr.cs321.simmons.edu/contact_me/contact.php"" class = "contact">Contact</a>
   </footer>
 </html><!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
