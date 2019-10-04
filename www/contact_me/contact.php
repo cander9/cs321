@@ -6,7 +6,7 @@
 <!-- Author:  Caitlin Anderson
      Purpose: CS321 Assignment 2 --> 
 
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/contactStyle.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
   <script src="/javascript/myscripts.js"></script>
 </head>
