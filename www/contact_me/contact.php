@@ -55,9 +55,7 @@
 </label>
 </p>
 </fieldset>  
-<fieldset class = "f2" {
-  top: 15px;
-}>
+<fieldset class = "f2">
 <legend>Description</legend>
 <p>
 <label>What : 
