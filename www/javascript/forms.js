@@ -93,10 +93,10 @@ function checkRadioButts() {
     if (radio1.checked){
         flag = true;
     }
-    if (radio2.checked){
+    else if (radio2.checked){
         flag = true;
     }
-    if (radio3.checked){
+    else if (radio3.checked){
         flag = true;
     }
     if (flag == false){
