@@ -3,7 +3,7 @@ function checkName1(){
     var errorname1 = document.getElementById( "errorname1" );
     if( name1 === "" ){
         console.log( "Empty" );
-        errorname1.innerHTML = "your name is required to complete this form" color = red;
+        errorname1.innerHTML = "your name is required to complete this form";
         errorname1.classList.add( "showerror" );
         console.log( errorname1 );
     } else {
@@ -19,7 +19,7 @@ function checkName2(){
     var errorname2 = document.getElementById( "errorname2" );
     if( name2 === "" ){
         console.log( "Empty" );
-        errorname2.innerHTML = "your name is required to complete this form" color = red;
+        errorname2.innerHTML = "your name is required to complete this form";
         errorname2.classList.add( "showerror" );
         console.log( errorname2 );
     } else {
