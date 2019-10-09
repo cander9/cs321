@@ -39,16 +39,40 @@ function checkPhone(){
         errorphone.innerHTML = "your phone number is required to complete this form";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
-    } else if((phone.length < 10) || (!intRegex.test(phone))){
+    } else if(phone!==intRegex.test(phone)){
         console.log( "Wrong format" );
         errorphone.innerHTML = "your phone number must be in ###-###-#### format";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
     }
     else {
-        console.log( "NOT Empty" );
+        console.log("NOT Empty");
         errorphone.innerHTML = "";
-        errorphone.classList.remove( "showerror" );
-        console.log( errorphone );
+        errorphone.classList.remove("showerror");
+        console.log(errorphone);
     }
 }
+
+function checkEmail(){
+    var email = document.getElementById( "email" ).value.trim() ;
+    var erroremail = document.getElementById( "erroremail" );
+    intRegex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}./; /*source: https://www.regular-expressions.info/email.html*/
+    if( email === "" ){
+        console.log( "Empty" );
+        erroremail.innerHTML = "your email is required to complete this form";
+        erroremail.classList.add( "showerror" );
+        console.log( erroremail );
+    } else if(email!==intRegex.test(email)){
+        console.log( "Wrong format" );
+        erroremail.innerHTML = "invalid email address";
+        erroremail.classList.add( "showerror" );
+        console.log( erroremail );
+    }
+    else {
+        console.log("NOT Empty");
+        erroremail.innerHTML = "";
+        erroremail.classList.remove("showerror");
+        console.log(erroremail);
+    }
+}
+
