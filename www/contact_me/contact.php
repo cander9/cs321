@@ -32,7 +32,7 @@
         <input  class = "regInput" type="tel" id = "phone" name="phone">
     </div>
     <div>
-        <label>Email : </label>
+        <label for = "email">Email : </label>
         <div id="erroremail" class="error"></div>
         <input  class = "regInput" type="email" id = "email" name="email">
     </div>
