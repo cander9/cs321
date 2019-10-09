@@ -33,7 +33,7 @@ function checkName2(){
 function checkPhone(){
     var phone = document.getElementById( "phone" ).value.trim() ;
     var errorphone = document.getElementById( "errorphone" );
-    check = /\d\d\d-\d\d\d-\d\d\d\d/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
+    check = /^\d\d\d-\d\d\d-\d\d\d\d$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
     if( phone === "" ){
         console.log( "Empty" );
         errorphone.innerHTML = "your phone number is required to complete this form";
@@ -56,7 +56,7 @@ function checkPhone(){
 function checkEmail(){
     var email = document.getElementById( "email" ).value.trim() ;
     var erroremail = document.getElementById( "erroremail" );
-    check = /\w+@\w+.\w+/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
+    check = /^\w+@\w+.\w+$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
     if( email === "" ){
         console.log( "Empty" );
         erroremail.innerHTML = "your email is required to complete this form";
