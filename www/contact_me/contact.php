@@ -80,7 +80,7 @@
         </div>
         <p></p>
     </fieldset>
-    <p><button class = "checkout" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
+    <p><button class = "submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
 </form>
 <footer>
     <a>copyright information</a>
