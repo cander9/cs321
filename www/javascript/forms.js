@@ -107,17 +107,17 @@ function checkRadioButts() {
 
 function checkChecks() {
     var errorcheck = document.getElementById( "errorcheck" );
-    var flag = false;
+    var flag = 0;
     if (document.getElementById( "check1" ).checked){
-        flag = true;
+        flag = flag + 1;
     }
     else if (document.getElementById( "check2" ).checked){
-        flag = true;
+        flag = flag + 1;
     }
     else if (document.getElementById( "check3" ).checked){
-        flag = true;
+        flag = flag + 1;
     }
-    if (flag == false){
+    if (flag < 2){
         console.log( "Empty selection" );
         errorcheck.innerHTML = "you must select a checkbox";
         errorcheck.classList.add( "showerror" );
