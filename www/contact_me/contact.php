@@ -58,13 +58,17 @@
 <fieldset class = "f2">
 <legend>Description</legend>
 <p>
-<label>What : 
-  <textarea class= "what" name="card_type" required></textarea>
+<label>Size : 
+  <p> </p>
+  <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
+  <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
+  <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
 </label>
 </p>
 <p>
 <label>Describe :
-<textarea class= "describe" name="card_number" required></textarea>
+  <p> </p>
+<textarea class= "describe" name="describe" required></textarea>
 </label>
 </p>
 </fieldset>
