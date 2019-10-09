@@ -81,7 +81,7 @@
     </div>
     <p></p>
 </fieldset>
-<p><input type="button" class="submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</inputbutton></p>
+<p><input type="button" class="submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();" value="Submit"/></p>
 </form>
 <footer>
     <a>copyright information</a>
