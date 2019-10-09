@@ -89,12 +89,17 @@ function checkRadioButts() {
     var radio2 = document.getElementById( "radio2" ).value.trim() ;
     var radio3 = document.getElementById( "radio3" ).value.trim() ;
     var errorradio = document.getElementById( "errorradio" );
-    var flag;
-    if (radio1.checked || radio2.checked || radio3.checked){
+    var flag = false;
+    if (radio1.checked){
         flag = true;
     }
-    else{
-        flag = false;
+    if (radio2.checked){
+        flag = true;
+    }
+    if (radio3.checked){
+        flag = true;
+    }
+    if (flag == false){
         console.log( "Empty selection" );
         errorradio.innerHTML = "you must select a size";
         errorradio.classList.add( "showerror" );
