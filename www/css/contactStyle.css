@@ -147,6 +147,11 @@ fieldset div label {
 
 .shipInput {
   position: relative;
+  left: 15px;
+}
+
+.regInput {
+  position: relative;
   left: 9px;
 }
 
