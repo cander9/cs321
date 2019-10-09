@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script src="/javascript/forms.js"></script>
 </head>
+<body>
 <nav class = "header">
     <a><h2>Name</h2></a>
     <ul class = "hov">
@@ -87,4 +88,5 @@
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
 </footer>
 <!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
+</body>
 </html>
