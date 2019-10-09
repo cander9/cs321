@@ -23,7 +23,7 @@
 <form>
 <p>
     <label>Name
-        <input type="text" name="customer_name" required>
+        <input type="text" name="customer_name">
     </label>
 </p>
 
@@ -41,13 +41,13 @@
 <fieldset class = "f1">
     <legend>Shipping Address</legend>
     <p>
-        <label>Name
-            <input type="text" name="customer_name" required>
-        </label>
+        <label for="name">Name: </label>
+            <div id="errorname" class="error"></div>
+            <input type="text" id="name" name="name" minlength="2">
     </p>
     <p>
         <label>Address Line 1
-            <input type="text" name="address_line1" required>
+            <input type="text" name="address_line1">
         </label>
     </p>
     <p>
@@ -73,12 +73,12 @@
     <p></p>
         <label>Describe :
     <p></p>
-    <textarea class= "describe" name="describe" required></textarea>
+    <textarea class= "describe" name="describe"></textarea>
     </label>
     <p></p>
 </fieldset>
 <p><button class = "checkout" >Submit</button></p>
-</form>    
+</form>
 <footer>
     <a>copyright information</a>
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
