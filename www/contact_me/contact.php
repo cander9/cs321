@@ -74,12 +74,12 @@
             <input id="check3" type="checkbox" name="hi3" value="hi3"> are<br>
         </div>
         <p></p>
-        <div>
+        <!--<div>
             <label>Describe :
                 <p></p>
                 <textarea class= "describe" name="describe"></textarea>
             </label>
-        </div>
+        </div>-->
         <p></p>
     </fieldset>
     <p><input type="button" class="submit" onclick="checkAll();" value="Submit"/></p>
