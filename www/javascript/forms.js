@@ -1,3 +1,10 @@
+function checkAll(){
+    checkName1();
+    checkName2();
+    checkPhone();
+    checkEmail();
+}
+
 function checkName1(){
     var name1 = document.getElementById( "name1" ).value.trim() ;
     var errorname1 = document.getElementById( "errorname1" );
@@ -62,7 +69,7 @@ function checkEmail(){
         erroremail.innerHTML = "your email is required to complete this form";
         erroremail.classList.add( "showerror" );
         console.log( erroremail );
-    } else if(email!=check.test(email)){
+    } else if(email!==check.test(email)){
         console.log( "Wrong format" );
         erroremail.innerHTML = "invalid email address";
         erroremail.classList.add( "showerror" );
