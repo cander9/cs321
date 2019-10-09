@@ -20,7 +20,7 @@
     </ul>
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
 </nav>   <!-- I want the nav as a seperate column to the left -->
-<form>
+<form action="#" method="POST">
     <div>
         <label for="name1">Name : </label>
         <div id="errorname1" class="error"></div>
