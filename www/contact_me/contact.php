@@ -1,109 +1,92 @@
-function checkAll(){
-    checkName1();
-    checkName2();
-    checkPhone();
-    checkEmail();
-    checkRadioButts();
-}
+<!doctype html>
 
-function checkName1(){
-    var name1 = document.getElementById( "name1" ).value.trim() ;
-    var errorname1 = document.getElementById( "errorname1" );
-    if( name1 === "" ){
-        console.log( "Empty" );
-        errorname1.innerHTML = "your name is required to complete this form"
-        errorname1.classList.add( "showerror" );
-        console.log( errorname1 );
-    } else {
-        console.log( "NOT Empty" );
-        errorname1.innerHTML = "";
-        errorname1.classList.remove( "showerror" );
-        console.log( errorname1 );
-    }
-}
+<html lang = "en">
+<head>
 
-function checkName2(){
-    var name2 = document.getElementById( "name2" ).value.trim() ;
-    var errorname2 = document.getElementById( "errorname2" );
-    if( name2 === "" ){
-        console.log( "Empty" );
-        errorname2.innerHTML = "your name is required to complete this form";
-        errorname2.classList.add( "showerror");
-        console.log( errorname2 );
-    } else {
-        console.log( "NOT Empty" );
-        errorname2.innerHTML = "";
-        errorname2.classList.remove( "showerror" );
-        console.log( errorname2 );
-    }
-}
+    <!-- Author:  Caitlin Anderson
+         Purpose: CS321 Assignment 2 -->
 
-function checkPhone(){
-    var phone = document.getElementById( "phone" ).value.trim() ;
-    var errorphone = document.getElementById( "errorphone" );
-    checkp = /^\d\d\d-\d\d\d-\d\d\d\d$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
-    if( phone === "" ){
-        console.log( "Empty" );
-        errorphone.innerHTML = "your phone number is required to complete this form";
-        errorphone.classList.add( "showerror" );
-        console.log( errorphone );
-    } else if(phone!=checkp.test(phone)){
-        console.log( "Wrong format" );
-        errorphone.innerHTML = "your phone number must be in ###-###-#### format";
-        errorphone.classList.add( "showerror" );
-        console.log( errorphone );
-    }
-    else {
-        console.log("NOT Empty");
-        errorphone.innerHTML = "";
-        errorphone.classList.remove("showerror");
-        console.log(errorphone);
-    }
-}
-
-function checkEmail(){
-    var email = document.getElementById( "email" ).value.trim() ;
-    var erroremail = document.getElementById( "erroremail" );
-    check = /^\w+@\w+.\w+$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
-    if( email === "" ){
-        console.log( "Empty" );
-        erroremail.innerHTML = "your email is required to complete this form";
-        erroremail.classList.add( "showerror" );
-        console.log( erroremail );
-    } else if(email!==check.test(email)){
-        console.log( "Wrong format" );
-        erroremail.innerHTML = "invalid email address";
-        erroremail.classList.add( "showerror" );
-        console.log( erroremail );
-    }
-    else {
-        console.log("NOT Empty");
-        erroremail.innerHTML = "";
-        erroremail.classList.remove("showerror");
-        console.log(erroremail);
-    }
-}
-
-function checkRadioButts() {
-    var radio1 = document.getElementById( "radio1" ).value.trim() ;
-    var radio2 = document.getElementById( "radio2" ).value.trim() ;
-    var radio3 = document.getElementById( "radio3" ).value.trim() ;
-    var errorradio = document.getElementById( "errorradio" );
-    var flag = false;
-    if (radio1.checked){
-        flag = true;
-    }
-    if (radio2.checked){
-        flag = true;
-    }
-    if (radio3.checked){
-        flag = true;
-    }
-    if (flag == false){
-        console.log( "Empty selection" );
-        errorradio.innerHTML = "you must select a size";
-        errorradio.classList.add( "showerror" );
-        console.log( errorradio );
-    }
-}
-
+    <link rel="stylesheet" href="/css/contactStyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
+    <script src="/javascript/forms.js"></script>
+</head>
+<body>
+<nav class="header">
+    <a><h2>Name</h2></a>
+    <ul class="hov">
+        <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>
+        <li class=crumb><a href = "gallery 2">Gallery 2</a></li>
+        <li class=crumb><a href = "shop">Shop</a></li>
+        <li class=crumb><a href = "bio">Bio</a></li>
+    </ul>
+    <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
+</nav>   <!-- I want the nav as a seperate column to the left -->
+<form action="#" method="POST">
+    <div>
+        <label for="name1">Name : </label>
+        <div id="errorname1" class="error"></div>
+        <input  class="regInput" type="text" id="name1" name="name1" minlength="2">
+    </div>
+    <div>
+        <label for = "phone">Phone : </label>
+        <div id="errorphone" class="error"></div>
+        <input  class="regInput" type="tel" id = "phone" name="phone">
+    </div>
+    <div>
+        <label for = "email">Email : </label>
+        <div id="erroremail" class="error"></div>
+        <input  class="regInput" type="email" id = "email" name="email">
+    </div>
+    <fieldset class="f1">
+        <legend>Shipping Address</legend>
+        <div>
+            <label for="name2">Name: </label>
+            <div id="errorname2" class="error"></div>
+            <input class="shipInput" type="text" id="name2" name="name2" minlength="2">
+        </div>
+        <div>
+            <label>Address Line 1
+                <input  class="shipInput" type="text" name="address_line1">
+            </label>
+        </div>
+        <div>
+            <label>Address Line 2
+                <input class="shipInput" type="text" name="address_line2">
+            </label>
+        </div>
+    </fieldset>
+    <fieldset class="f2">
+        <legend>Description</legend>
+        <div>
+            <label for="radio1">Size :</label>
+            <div id="errorradio" class="error"></div>
+                <input id="radio1" type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
+                <input id="radio2" type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
+                <input id="radio3" type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
+        </div>
+        <div>
+            <p></p>
+            <label>These are my checkboxes:</label>
+            <p></p>
+            <input type="checkbox" name="hi1" value="hi1"> here<br>
+            <input type="checkbox" name="hi2" value="hi2"> they<br>
+            <input type="checkbox" name="hi3" value="hi3"> are<br>
+        </div>
+        <p></p>
+        <div>
+            <label>Describe :
+                <p></p>
+                <textarea class= "describe" name="describe"></textarea>
+            </label>
+        </div>
+        <p></p>
+    </fieldset>
+    <p><input type="button" class="submit" onclick="checkAll();" value="Submit"/></p>
+</form>
+<footer>
+    <a>copyright information</a>
+    <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class="contact">Contact Me</a>
+</footer>
+<!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
+</body>
+</html>
