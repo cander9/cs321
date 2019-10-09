@@ -33,13 +33,13 @@ function checkName2(){
 function checkPhone(){
     var phone = document.getElementById( "phone" ).value.trim() ;
     var errorphone = document.getElementById( "errorphone" );
-    check = /^\d\d\d-\d\d\d-\d\d\d\d$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
+    checkp = /^\d\d\d-\d\d\d-\d\d\d\d$/; /*source: https://www.rexegg.com/regex-quickstart.html#chars*/
     if( phone === "" ){
         console.log( "Empty" );
         errorphone.innerHTML = "your phone number is required to complete this form";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
-    } else if(phone!==check.test(phone)){
+    } else if(phone!==checkp.test(phone)){
         console.log( "Wrong format" );
         errorphone.innerHTML = "your phone number must be in ###-###-#### format";
         errorphone.classList.add( "showerror" );
