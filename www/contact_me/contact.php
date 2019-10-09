@@ -20,7 +20,7 @@
     </ul>
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
 </nav>   <!-- I want the nav as a seperate column to the left -->
-<form action="#" method="POST">
+<!--form action="#" method="POST"-->
     <div>
         <label for="name1">Name : </label>
         <div id="errorname1" class="error"></div>
@@ -80,7 +80,7 @@
         </div>
         <p></p>
     </fieldset>
-    <p><button class = "submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
+    <<p><button class = "submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
 </form>
 <footer>
     <a>copyright information</a>
