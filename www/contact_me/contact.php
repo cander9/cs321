@@ -59,12 +59,12 @@
 <legend>Description</legend>
 <p>
 <label>What : 
-  <textarea type="text" class= "what" name="card_type" required></textarea>
+  <textarea class= "what" name="card_type" required></textarea>
 </label>
 </p>
 <p>
 <label>Describe :
-<textarea type="text" class= "describe" name="card_number" required></textarea>
+<textarea class= "describe" name="card_number" required></textarea>
 </label>
 </p>
 </fieldset>
