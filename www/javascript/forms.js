@@ -4,6 +4,7 @@ function checkAll(){
     checkPhone();
     checkEmail();
     checkRadioButts();
+    checkChecks();
 }
 
 function checkName1(){
@@ -103,4 +104,25 @@ function checkRadioButts() {
         console.log( errorradio );
     }
 }
+
+function checkChecks() {
+    var errorcheck = document.getElementById( "errorcheck" );
+    var flag = false;
+    if (document.getElementById( "check1" ).checked){
+        flag = true;
+    }
+    else if (document.getElementById( "check2" ).checked){
+        flag = true;
+    }
+    else if (document.getElementById( "check3" ).checked){
+        flag = true;
+    }
+    if (flag == false){
+        console.log( "Empty selection" );
+        errorcheck.innerHTML = "you must select a checkbox";
+        errorcheck.classList.add( "showerror" );
+        console.log( errorcheck );
+    }
+}
+
 
