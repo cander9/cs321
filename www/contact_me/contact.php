@@ -21,68 +21,64 @@
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
 </nav>   <!-- I want the nav as a seperate column to the left -->
 <form>
-<div>
+<p>
     <label>Name
         <input type="text" name="customer_name" required>
     </label>
-</div>
+</p>
 
-<div>
+<p>
     <label>Phone
         <input type="tel" name="phone_number">
     </label>
-</div>
+</p>
 
-<div>
+<p>
     <label>Email
         <input type="email" name="email_address">
     </label>
-</div>
+</p>
 <fieldset class = "f1">
     <legend>Shipping Address</legend>
-    <div>
+    <p>
         <label>Name
             <input type="text" name="customer_name" required>
         </label>
-    </div>
-    <div>
+    </p>
+    <p>
         <label>Address Line 1
             <input type="text" name="address_line1" required>
         </label>
-    </div>
-    <div>
+    </p>
+    <p>
         <label>Address Line 2
             <input type="text" name="address_line2">
         </label>
-    </div>
+    </p>
 </fieldset>
 <fieldset class = "f2">
     <legend>Description</legend>
-    <div>
+    <p>
         <label>Size :</label>
     <p> </p>
     <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
     <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
     <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
-    </div>
-    <div>
+    <p>
         <label>These are my checkboxes:</label>
     <p></p>
     <input type="checkbox" name="hi1" value="hi1"> here<br>
     <input type="checkbox" name="hi2" value="hi2"> they<br>
     <input type="checkbox" name="hi3" value="hi3"> are<br>
     <p></p>
-    </div>
-    <div>
         <label>Describe :
     <p></p>
     <textarea class= "describe" name="describe" required></textarea>
     </label>
     <p></p>
-    </div>
 </fieldset>
 <p><button class = "checkout" >Submit</button></p>
-</form>
+</form>    
 <footer>
     <a>copyright information</a>
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
