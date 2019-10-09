@@ -58,7 +58,7 @@
     <fieldset class="f2">
         <legend>Description</legend>
         <div>
-            <label for="radio1">Size :</label>
+            <label>Size :</label>
             <div id="errorradio" class="error"></div>
                 <input id="radio1" type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
                 <input id="radio2" type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
