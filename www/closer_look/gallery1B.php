@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/closer_style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
 </head>
+<body>     
   <nav class = "header">         
     <a><h2>Name</h2></a>
     <ul>
@@ -29,4 +30,5 @@
     <a>copyright information</a>
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
   </footer>
+  </body>   
 </html><!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
