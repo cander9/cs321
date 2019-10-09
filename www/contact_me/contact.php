@@ -67,10 +67,11 @@
         <div>
             <p></p>
             <label>These are my checkboxes:</label>
+            <div id="errorcheck" class="error"></div>
             <p></p>
-            <input type="checkbox" name="hi1" value="hi1"> here<br>
-            <input type="checkbox" name="hi2" value="hi2"> they<br>
-            <input type="checkbox" name="hi3" value="hi3"> are<br>
+            <input id="check1" type="checkbox" name="hi1" value="hi1"> here<br>
+            <input id="check2" type="checkbox" name="hi2" value="hi2"> they<br>
+            <input id="check3" type="checkbox" name="hi3" value="hi3"> are<br>
         </div>
         <p></p>
         <div>
