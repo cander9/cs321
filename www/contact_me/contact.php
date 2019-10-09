@@ -24,16 +24,16 @@
     <div>
         <label for="name1">Name : </label>
     <div id="errorname1" class="error"></div>
-    <input type="text" id="name1" name="name1" minlength="2">
+    <input  class = "regInput" type="text" id="name1" name="name1" minlength="2">
     </div>
     <div>
         <label>Phone :
-            <input type="tel" name="phone_number">
+            <input  class = "regInput" type="tel" name="phone_number">
         </label>
     </div>
     <div>
         <label>Email :
-            <input type="email" name="email_address">
+            <input  class = "regInput" type="email" name="email_address">
         </label>
     </div>
     <fieldset class = "f1">
