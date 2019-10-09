@@ -111,10 +111,10 @@ function checkChecks() {
     if (document.getElementById( "check1" ).checked){
         flag = flag + 1;
     }
-    else if (document.getElementById( "check2" ).checked){
+    if (document.getElementById( "check2" ).checked){
         flag = flag + 1;
     }
-    else if (document.getElementById( "check3" ).checked){
+    if (document.getElementById( "check3" ).checked){
         flag = flag + 1;
     }
     if (flag < 2){
