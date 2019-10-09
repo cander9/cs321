@@ -27,9 +27,9 @@
         <input  class = "regInput" type="text" id="name1" name="name1" minlength="2">
     </div>
     <div>
-        <label>Phone :
-            <input  class = "regInput" type="tel" name="phone_number">
-        </label>
+        <label for = "phone">Phone : </label>
+        <div id="errorphone" class="error"></div>
+        <input  class = "regInput" type="tel" id = "phone" name="phone" minlength="10">
     </div>
     <div>
         <label>Email :
