@@ -33,13 +33,13 @@ function checkName2(){
 function checkPhone(){
     var phone = document.getElementById( "phone" ).value.trim() ;
     var errorphone = document.getElementById( "errorphone" );
-    intRegex = /[0-9 -()+]+$/; /*source: https://www.sitepoint.com/jquery-check-phone-number-email/*/
+    check = /\d\d\d-\d\d\d-\d\d\d\d/; /*source: https://www.sitepoint.com/jquery-check-phone-number-email/*/
     if( phone === "" ){
         console.log( "Empty" );
         errorphone.innerHTML = "your phone number is required to complete this form";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
-    } else if(phone!==intRegex.test(phone)){
+    } else if(phone!==check.test(phone)){
         console.log( "Wrong format" );
         errorphone.innerHTML = "your phone number must be in ###-###-#### format";
         errorphone.classList.add( "showerror" );
@@ -56,13 +56,13 @@ function checkPhone(){
 function checkEmail(){
     var email = document.getElementById( "email" ).value.trim() ;
     var erroremail = document.getElementById( "erroremail" );
-    intRegex = /[a-z]+@[a-z]+\.[a-z]{2,}/; /*source: https://www.regular-expressions.info/email.html*/
+    check = /\w+@\w+.\w+/; /*source: https://www.regular-expressions.info/email.html*/
     if( email === "" ){
         console.log( "Empty" );
         erroremail.innerHTML = "your email is required to complete this form";
         erroremail.classList.add( "showerror" );
         console.log( erroremail );
-    } else if(email!==intRegex.test(email)){
+    } else if(email!==check.test(email)){
         console.log( "Wrong format" );
         erroremail.innerHTML = "invalid email address";
         erroremail.classList.add( "showerror" );
