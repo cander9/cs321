@@ -3,6 +3,7 @@ function checkAll(){
     checkName2();
     checkPhone();
     checkEmail();
+    checkRadioButts();
 }
 
 function checkName1(){
@@ -80,6 +81,24 @@ function checkEmail(){
         erroremail.innerHTML = "";
         erroremail.classList.remove("showerror");
         console.log(erroremail);
+    }
+}
+
+function checkRadioButts() {
+    var radio = document.getElementById( "radio" ).value.trim() ;
+    var errorradio = document.getElementById( "errorradio" );
+    var flag;
+    for(i=0; i<len; i++){
+        if (document.formRate.radio[i].checked){
+            flag = true;
+        }
+        else{
+            flag = false;
+            console.log( "Empty selection" );
+            errorradio.innerHTML = "you must select a size";
+            errorradio.classList.add( "showerror" );
+            console.log( errorradio );
+        }
     }
 }
 
