@@ -185,4 +185,6 @@ textarea:focus{
     background-color: #F7F7F7;
 }
 
-.submit
+.error {
+  color: red;
+}
