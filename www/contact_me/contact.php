@@ -29,12 +29,12 @@
     <div>
         <label for = "phone">Phone : </label>
         <div id="errorphone" class="error"></div>
-        <input  class = "regInput" type="tel" id = "phone" name="phone" minlength="10">
+        <input  class = "regInput" type="tel" id = "phone" name="phone">
     </div>
     <div>
-        <label>Email :
-            <input  class = "regInput" type="email" name="email_address">
-        </label>
+        <label>Email : </label>
+        <div id="erroremail" class="error"></div>
+        <input  class = "regInput" type="email" id = "email" name="email">
     </div>
     <fieldset class = "f1">
         <legend>Shipping Address</legend>
@@ -80,7 +80,7 @@
         </div>
         <p></p>
     </fieldset>
-    <p><button class = "checkout" onclick="checkName1(),checkName2(),checkPhone();">Submit</button></p>
+    <p><button class = "checkout" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
 </form>
 <footer>
     <a>copyright information</a>
