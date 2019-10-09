@@ -119,7 +119,7 @@ function checkChecks() {
     }
     if (flag < 2){
         console.log( "Empty selection" );
-        errorcheck.innerHTML = "you must select a checkbox";
+        errorcheck.innerHTML = "you must select at least 2 checkboxes";
         errorcheck.classList.add( "showerror" );
         console.log( errorcheck );
     }
