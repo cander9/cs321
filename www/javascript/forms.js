@@ -85,18 +85,15 @@ function checkEmail(){
 }
 
 function checkRadioButts() {
-    var radio1 = document.getElementById( "radio1" ).value.trim() ;
-    var radio2 = document.getElementById( "radio2" ).value.trim() ;
-    var radio3 = document.getElementById( "radio3" ).value.trim() ;
     var errorradio = document.getElementById( "errorradio" );
     var flag = false;
-    if (radio1.checked){
+    if (document.getElementById( "radio1" ).checked){
         flag = true;
     }
-    else if (radio2.checked){
+    else if (document.getElementById( "radio2" ).checked){
         flag = true;
     }
-    else if (radio3.checked){
+    else if (document.getElementById( "radio3" ).checked){
         flag = true;
     }
     if (flag == false){
