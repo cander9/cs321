@@ -80,8 +80,13 @@
         </div>
         <p></p>
     </fieldset>
+<<<<<<< HEAD
     <<p><button class = "submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
 </form>
+=======
+    <p><button class = "submit" onclick="checkName1(),checkName2(),checkPhone(),checkEmail();">Submit</button></p>
+<!--/form-->
+>>>>>>> c9e0f5a6ba5c6d6c3b115faf2b078a3e569e3c6c
 <footer>
     <a>copyright information</a>
     <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class = "contact">Contact Me</a>
