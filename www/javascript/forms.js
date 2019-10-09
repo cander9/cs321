@@ -85,20 +85,20 @@ function checkEmail(){
 }
 
 function checkRadioButts() {
-    var radio = document.getElementById( "radio" ).value.trim() ;
+    var radio1 = document.getElementById( "radio1" ).value.trim() ;
+    var radio2 = document.getElementById( "radio2" ).value.trim() ;
+    var radio3 = document.getElementById( "radio3" ).value.trim() ;
     var errorradio = document.getElementById( "errorradio" );
     var flag;
-    for(i=0; i<len; i++){
-        if (document.formRate.radio[i].checked){
-            flag = true;
-        }
-        else{
-            flag = false;
-            console.log( "Empty selection" );
-            errorradio.innerHTML = "you must select a size";
-            errorradio.classList.add( "showerror" );
-            console.log( errorradio );
-        }
+    if (radio1.checked || radio2.checked || radio3.checked){
+        flag = true;
+    }
+    else{
+        flag = false;
+        console.log( "Empty selection" );
+        errorradio.innerHTML = "you must select a size";
+        errorradio.classList.add( "showerror" );
+        console.log( errorradio );
     }
 }
 
