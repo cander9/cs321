@@ -56,7 +56,7 @@ function checkPhone(){
 function checkEmail(){
     var email = document.getElementById( "email" ).value.trim() ;
     var erroremail = document.getElementById( "erroremail" );
-    intRegex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}./; /*source: https://www.regular-expressions.info/email.html*/
+    intRegex = /[a-z]+@[a-z]+\.[a-z]{2,}/; /*source: https://www.regular-expressions.info/email.html*/
     if( email === "" ){
         console.log( "Empty" );
         erroremail.innerHTML = "your email is required to complete this form";
