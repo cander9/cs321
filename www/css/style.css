@@ -1,10 +1,4 @@
 /*font stuff*/
-
-/*
-Author:  Caitlin Anderson
-Purpose: CS321 Assignment 2
-*/
-
 html {
   font-family: 'Raleway', sans-serif;
 }
@@ -24,7 +18,7 @@ h2 {
 /*navigation bar*/
 nav {
   overflow: hidden;
-  padding: 10px 10px;
+  padding: 10px 0px;
   /*background-color: #EFEFF0;*/
 }
 
