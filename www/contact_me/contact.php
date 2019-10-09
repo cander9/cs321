@@ -21,58 +21,62 @@
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
 </nav>   <!-- I want the nav as a seperate column to the left -->
 <form>
-    <p>
-        <label for="name1">Name: </label>
+    <div>
+        <label for="name1">Name : </label>
     <div id="errorname1" class="error"></div>
     <input type="text" id="name1" name="name1" minlength="2">
-    </p>
-    <p>
-        <label>Phone
+    </div>
+    <div>
+        <label>Phone :
             <input type="tel" name="phone_number">
         </label>
-    </p>
-    <p>
-        <label>Email
+    </div>
+    <div>
+        <label>Email :
             <input type="email" name="email_address">
         </label>
-    </p>
+    </div>
     <fieldset class = "f1">
         <legend>Shipping Address</legend>
-        <p>
+        <div>
             <label for="name2">Name: </label>
         <div id="errorname2" class="error"></div>
-        <input type="text" id="name2" name="name2" minlength="2">
-        </p>
-        <p>
+        <input class = "shipInput" type="text" id="name2" name="name2" minlength="2">
+        </div>
+        <div>
             <label>Address Line 1
-                <input type="text" name="address_line1">
+                <input  class = "shipInput" type="text" name="address_line1">
             </label>
-        </p>
-        <p>
+        </div>
+        <div>
             <label>Address Line 2
-                <input type="text" name="address_line2">
+                <input class = "shipInput" type="text" name="address_line2">
             </label>
-        </p>
+        </div>
     </fieldset>
     <fieldset class = "f2">
         <legend>Description</legend>
-        <p>
+        <div>
             <label>Size :</label>
         <p> </p>
         <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
         <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
         <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
-        <p>
+      </div>
+        <div>
+          <p></p>
             <label>These are my checkboxes:</label>
         <p></p>
         <input type="checkbox" name="hi1" value="hi1"> here<br>
         <input type="checkbox" name="hi2" value="hi2"> they<br>
         <input type="checkbox" name="hi3" value="hi3"> are<br>
+      </div>
         <p></p>
+      <div>
         <label>Describe :
             <p></p>
             <textarea class= "describe" name="describe"></textarea>
-        </label>
+          </div>
         <p></p>
     </fieldset>
     <p><button class = "checkout" onclick="checkName1(); checkName2();">Submit</button></p>
