@@ -1,174 +1,186 @@
 /*font stuff*/
 html {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
 }
 
 h2 {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.05em;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.05em;
 }
 
 /*navigation bar*/
 nav {
-    overflow: hidden;
-    padding: 10px 10px;
-    /*background-color: #EFEFF0;*/
+  overflow: hidden;
+  padding: 10px 10px;
+  /*background-color: #EFEFF0;*/
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 nav a h2 {
-    float: left;
-    padding: 0 16px;
+  float: left;
+  padding: 0px 16px;
 }
 
 li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 15px 16px;
-    text-decoration: none;
-    vertical-align: middle;
-}
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+} 
 
 .hov a:hover {
-    background-color: #EFEFF0;
+  background-color: #EFEFF0;
 }
 /*Navigation CSS Source:  https://www.w3schools.com/css/css_navbar.asp*/
 
 header {
-    padding: 0px 16px;
-    max-width: 990px;
-    /*background-color: #EFEFF0;*/
+  padding: 0px 16px;
+  max-width: 990px;
+  /*background-color: #EFEFF0;*/
 }
 
 section {
-    padding: 15px 16px;
-    /*background-color: #EFEFF0;*/
+  padding: 15px 16px;
+  /*background-color: #EFEFF0;*/
 }
 
 footer {
-    position: relative;
-    top: 60px;
-    padding: 15px 16px;
-    font-size: 0.75em;
-    max-width: 990px;
+  position: relative;
+  top: 60px;
+  padding: 15px 16px;
+  font-size: 0.75em;  
+  max-width: 990px;
 }
 
 .contact {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 0 16px;
-    text-decoration: none;
-    vertical-align: middle;
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 .contact:hover {
-    background-color: #EFEFF0;
+  background-color: #EFEFF0;
 }
 
 fieldset {
-    position: relative;
-    left: 15px;
-    padding: 15px 16px;
-    max-width: 940px;
-    border-width: thin;
-    border-color: #BABABA;
+  position: relative;
+  left: 15px;
+  padding: 15px 16px;
+  max-width: 940px;
+  border-width: thin;
+  border-color: #BABABA;
 }
 
 .f1 {
-    top: 15px;
+  top: 15px;
 }
 
 .f2 {
-    top: 30px;
+  top: 30px;
 }
 
 .f3 {
-    top: 45px;
+  top: 45px;
 }
 
 p button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 0 22px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    position: relative;
-    top: 50px;
-    left: 15px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Raleway', sans-serif;
-    outline: 0.1px solid #CECECE;
+  background-color: white;  
+  color: black;
+  border: none;
+  padding: 0px 22px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  top: 50px;
+  left: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  outline: 0.1px solid #CECECE;
 }
 
 p button:focus{
-    background-color: #EFEFF0;
+  background-color: #EFEFF0;
 }
 
 legend {
-    position: relative;
-    padding: 0 5px;
+  position: relative;
+  padding: 0px 5px;
 }
 
 label {
-    position: relative;
-    left: 18px;
+  position: relative;
+  left: 18px;
 }
 
-fieldset p label {
-    font-size: 0.8em;
-    left: 10px;
+fieldset div label {
+  font-size: 0.8em;
+  left: 10px;
+}
+
+div input {
+  position: relative;
+  left: 15px;
+}
+
+.shipInput {
+  position: relative;
+  left: 9px;
 }
 
 .what {
-    min-width: 915px;
-    text-align: left;
-    max-width:915px;
-    max-height:50px;
+  min-width: 915px;
+  text-align: left;
+  max-width:915px;
+  max-height:50px;
 }
 
 .describe {
-    min-width: 915px;
-    min-height: 100px;
-    text-align: left;
-    max-width: 915px;
-    max-height: 120px;
+  min-width: 915px;
+  min-height: 100px;
+  text-align: left;
+  max-width: 915px;
+  max-height: 120px;
 }
 
 input:focus{
-    outline: 0.1px solid #CECECE;
-    background-color: #F7F7F7;
+  outline: 0.1px solid #CECECE;
+  background-color: #F7F7F7;
 }
 
 textarea {
-    border-color: #CECECE;
-    font-family: 'Raleway', sans-serif;
+  border-color: #CECECE;
+  font-family: 'Raleway', sans-serif;
 }
 
 textarea:focus{
-    outline: 0.1px solid #CECECE;
-    background-color: #F7F7F7;
+  outline: 0.1px solid #CECECE;
+  background-color: #F7F7F7;
 }
