@@ -39,7 +39,7 @@ function checkPhone(){
         errorphone.innerHTML = "your phone number is required to complete this form";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
-    } else if(phone!==checkp.test(phone)){
+    } else if(phone!=checkp.test(phone)){
         console.log( "Wrong format" );
         errorphone.innerHTML = "your phone number must be in ###-###-#### format";
         errorphone.classList.add( "showerror" );
@@ -62,7 +62,7 @@ function checkEmail(){
         erroremail.innerHTML = "your email is required to complete this form";
         erroremail.classList.add( "showerror" );
         console.log( erroremail );
-    } else if(email!==check.test(email)){
+    } else if(email!=check.test(email)){
         console.log( "Wrong format" );
         erroremail.innerHTML = "invalid email address";
         erroremail.classList.add( "showerror" );
