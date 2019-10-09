@@ -23,8 +23,8 @@
 <form>
     <div>
         <label for="name1">Name : </label>
-    <div id="errorname1" class="error"></div>
-    <input  class = "regInput" type="text" id="name1" name="name1" minlength="2">
+        <div id="errorname1" class="error"></div>
+        <input  class = "regInput" type="text" id="name1" name="name1" minlength="2">
     </div>
     <div>
         <label>Phone :
@@ -40,8 +40,8 @@
         <legend>Shipping Address</legend>
         <div>
             <label for="name2">Name: </label>
-        <div id="errorname2" class="error"></div>
-        <input class = "shipInput" type="text" id="name2" name="name2" minlength="2">
+            <div id="errorname2" class="error"></div>
+            <input class = "shipInput" type="text" id="name2" name="name2" minlength="2">
         </div>
         <div>
             <label>Address Line 1
@@ -58,25 +58,26 @@
         <legend>Description</legend>
         <div>
             <label>Size :</label>
-        <p> </p>
-        <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
-        <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
-        <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
-      </div>
+            <p> </p>
+            <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
+            <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
+            <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
+        </div>
         <div>
-          <p></p>
-            <label>These are my checkboxes:</label>
-        <p></p>
-        <input type="checkbox" name="hi1" value="hi1"> here<br>
-        <input type="checkbox" name="hi2" value="hi2"> they<br>
-        <input type="checkbox" name="hi3" value="hi3"> are<br>
-      </div>
-        <p></p>
-      <div>
-        <label>Describe :
             <p></p>
-            <textarea class= "describe" name="describe"></textarea>
-          </div>
+            <label>These are my checkboxes:</label>
+            <p></p>
+            <input type="checkbox" name="hi1" value="hi1"> here<br>
+            <input type="checkbox" name="hi2" value="hi2"> they<br>
+            <input type="checkbox" name="hi3" value="hi3"> are<br>
+        </div>
+        <p></p>
+        <div>
+            <label>Describe :
+                <p></p>
+                <textarea class= "describe" name="describe"></textarea>
+            </label>
+        </div>
         <p></p>
     </fieldset>
     <p><button class = "checkout" onclick="checkName1(); checkName2();">Submit</button></p>
