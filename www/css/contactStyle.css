@@ -184,3 +184,7 @@ textarea:focus{
   outline: 0.1px solid #CECECE;
   background-color: #F7F7F7;
 }
+
+.error {
+  color: red;
+}
