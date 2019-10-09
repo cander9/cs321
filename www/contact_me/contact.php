@@ -21,63 +21,61 @@
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
 </nav>   <!-- I want the nav as a seperate column to the left -->
 <form>
-<p>
-    <label>Name
-        <input type="text" name="customer_name">
-    </label>
-</p>
-
-<p>
-    <label>Phone
-        <input type="tel" name="phone_number">
-    </label>
-</p>
-
-<p>
-    <label>Email
-        <input type="email" name="email_address">
-    </label>
-</p>
-<fieldset class = "f1">
-    <legend>Shipping Address</legend>
     <p>
-        <label for="name">Name: </label>
-            <div id="errorname" class="error"></div>
-            <input type="text" id="name" name="name" minlength="2">
+        <label for="name1">Name: </label>
+    <div id="errorname1" class="error"></div>
+    <input type="text" id="name1" name="name1" minlength="2">
     </p>
     <p>
-        <label>Address Line 1
-            <input type="text" name="address_line1">
+        <label>Phone
+            <input type="tel" name="phone_number">
         </label>
     </p>
     <p>
-        <label>Address Line 2
-            <input type="text" name="address_line2">
+        <label>Email
+            <input type="email" name="email_address">
         </label>
     </p>
-</fieldset>
-<fieldset class = "f2">
-    <legend>Description</legend>
-    <p>
-        <label>Size :</label>
-    <p> </p>
-    <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
-    <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
-    <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
-    <p>
-        <label>These are my checkboxes:</label>
-    <p></p>
-    <input type="checkbox" name="hi1" value="hi1"> here<br>
-    <input type="checkbox" name="hi2" value="hi2"> they<br>
-    <input type="checkbox" name="hi3" value="hi3"> are<br>
-    <p></p>
+    <fieldset class = "f1">
+        <legend>Shipping Address</legend>
+        <p>
+            <label for="name2">Name: </label>
+        <div id="errorname2" class="error"></div>
+        <input type="text" id="name2" name="name2" minlength="2">
+        </p>
+        <p>
+            <label>Address Line 1
+                <input type="text" name="address_line1">
+            </label>
+        </p>
+        <p>
+            <label>Address Line 2
+                <input type="text" name="address_line2">
+            </label>
+        </p>
+    </fieldset>
+    <fieldset class = "f2">
+        <legend>Description</legend>
+        <p>
+            <label>Size :</label>
+        <p> </p>
+        <input type="radio" name="size" value="small"> Small &#40;5X7 in. or comparable&#41;<br>
+        <input type="radio" name="size" value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
+        <input type="radio" name="size" value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
+        <p>
+            <label>These are my checkboxes:</label>
+        <p></p>
+        <input type="checkbox" name="hi1" value="hi1"> here<br>
+        <input type="checkbox" name="hi2" value="hi2"> they<br>
+        <input type="checkbox" name="hi3" value="hi3"> are<br>
+        <p></p>
         <label>Describe :
-    <p></p>
-    <textarea class= "describe" name="describe"></textarea>
-    </label>
-    <p></p>
-</fieldset>
-<p><button class = "checkout" >Submit</button></p>
+            <p></p>
+            <textarea class= "describe" name="describe"></textarea>
+        </label>
+        <p></p>
+    </fieldset>
+    <p><button class = "checkout" onclick="checkName1(); checkName2();">Submit</button></p>
 </form>
 <footer>
     <a>copyright information</a>
