@@ -33,12 +33,13 @@ function checkName2(){
 function checkPhone(){
     var phone = document.getElementById( "phone" ).value.trim() ;
     var errorphone = document.getElementById( "errorphone" );
+    intRegex = /[0-9 -()+]+$/; /*source: https://www.sitepoint.com/jquery-check-phone-number-email/*/
     if( phone === "" ){
         console.log( "Empty" );
         errorphone.innerHTML = "your phone number is required to complete this form";
         errorphone.classList.add( "showerror" );
         console.log( errorphone );
-    } else if(phone !== "000-000-0000"){
+    } else if((phone.length < 10) || (!intRegex.test(phone))){
         console.log( "Wrong format" );
         errorphone.innerHTML = "your phone number must be in ###-###-#### format";
         errorphone.classList.add( "showerror" );
