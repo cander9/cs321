@@ -167,7 +167,7 @@ function test_input($data) {
         </div>
         <p></p>-->
     </fieldset>
-    <p><input type="submit" class="submit" value="Submit"/></p> <!--onclick="checkAll();"-->
+    <p><input type="submit" class="submit" onclick="checkAll();" value="Submit"/></p> 
 </form>
 <footer>
     <a>copyright information</a>
