@@ -150,7 +150,7 @@ function test_input($data) {
         <div>
             <p></p>
             <label>These are my checkboxes:</label>
-            <div id="errorcheck" class="error"><?php echo $checkERR;?></div>
+            <div id="errorcheck" class="error"><?php echo "<p class='note'>". $checkERR;?></div>
             <p></p>
             <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][0])) echo "checked" ?> value="here"> here<br>
             <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][1])) echo "checked" ?> value="they"> they<br>
