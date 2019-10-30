@@ -22,8 +22,8 @@
 </nav>   <!-- I want the nav as a seperate column to the left -->
 <?php
 // define variables and set to empty values
-$name1ERR = $phoneERR = $emailERR = $name2ERR = $address_line1ERR = $sizeERR = "";
-$name1 = $phone = $email = $name2 = $address_line1 = $address_line2 = $size = $hi1 = $hi2 = $hi3 = "";
+$name1ERR = $phoneERR = $emailERR = $name2ERR = $address_line1ERR = $sizeERR = $checkERR = "";
+$name1 = $phone = $email = $name2 = $address_line1 = $address_line2 = $size = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name1"])) {
@@ -88,7 +88,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $size = test_input($_POST["size"]);
     }
-    //YOU NEED TO DO SOMETHING WITH THE CHECKBOXES!!!
+
+    if (count($_POST['check']) < 2){
+        $checkERR = "Select at least two checkboxes";
+    }
 }
 
 
@@ -146,11 +149,11 @@ function test_input($data) {
         <div>
             <p></p>
             <label>These are my checkboxes:</label>
-            <div id="errorcheck" class="error"></div>
+            <div id="errorcheck" class="error"><?php echo $checkERR;?></div>
             <p></p>
-            <input id="check1" type="checkbox" name="hi1" value="hi1"> here<br>
-            <input id="check2" type="checkbox" name="hi2" value="hi2"> they<br>
-            <input id="check3" type="checkbox" name="hi3" value="hi3"> are<br>
+            <input id="check1" type="checkbox" name="check[]" value="here"> here<br>
+            <input id="check2" type="checkbox" name="check[]" value="they"> they<br>
+            <input id="check3" type="checkbox" name="check[]" value="are"> are<br>
         </div>
         <p></p>
         <!--<div>
