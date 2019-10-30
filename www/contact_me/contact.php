@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $phone = test_input($_POST["phone"]);
         if (!preg_match("/^\d{3}-\d{3}-\d{4}$/",$phone)) {
-            $phoneERR = "Phone number must be 10 digits";
+            $phoneERR = "Phone number must be in ###-###-#### format and include only numbers and dashes";
         }
     }
 
