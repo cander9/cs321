@@ -162,14 +162,6 @@ function test_input($data) {
             <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['check'][1]) && $_POST['check'][1] = "they") echo "checked" ?> value="they"> they<br>
             <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['check'][2]) && $_POST['check'][2] = "are") echo "checked" ?> value="are"> are<br>
         </div>
-        <!--<p></p>
-        <div>
-            <label>Describe :
-                <p></p>
-                <textarea class= "describe" name="describe"></textarea>
-            </label>
-        </div>
-        <p></p>-->
     </fieldset>
     <p><input type="submit" class="submit" value="Submit"/></p><!--onclick="checkAll();"-->
 </form>
