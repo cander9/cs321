@@ -30,7 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name1ERR = "Name is required";
     } else {
         $name1 = test_input($_POST["name1"]);
-        if (!preg_match("/^[a-zA-Z ]*$/",$name1)) {
+        $name1length= strlen($name1);
+        if ($name1length<3){
+            $name1ERR = "Name must be at least 3 letters";
+        }
+        else if (!preg_match("/^[a-zA-Z ]*$/",$name1)) {
             $name1ERR = "Only letters and white space allowed in name";
         }
     }
@@ -149,7 +153,7 @@ function test_input($data) {
         </div>-->
         <p></p>
     </fieldset>
-    <p><input type="submit" class="submit" value="Submit"/></p><!-- onclick="checkAll();" -->
+    <p><input type="submit" class="submit" value="Submit"/></p> <!--onclick="checkAll();"-->
 </form>
 <footer>
     <a>copyright information</a>
