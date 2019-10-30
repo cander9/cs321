@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $size = test_input($_POST["size"]);
     }
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['check'])) {
         $check = $_POST['check'];
         if (count($_POST['check']) < 2) {
             $checkERR = "Select at least two checkboxes";
