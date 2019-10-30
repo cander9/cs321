@@ -160,6 +160,7 @@ function test_input($data) {
             <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['check'][0]) && $_POST['check'][0] = "here") echo "checked" ?> value="here"> here<br>
             <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['check'][1]) && $_POST['check'][1] = "they") echo "checked" ?> value="they"> they<br>
             <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['check'][2]) && $_POST['check'][2] = "are") echo "checked" ?> value="are"> are<br>
+            <?php echo $_POST['check'][0];?>
         </div>
         <!--<p></p>
         <div>
