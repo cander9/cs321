@@ -24,6 +24,7 @@
 // define variables and set to empty values
 $name1ERR = $phoneERR = $emailERR = $name2ERR = $address_line1ERR = $sizeERR = $checkERR = "";
 $name1 = $phone = $email = $name2 = $address_line1 = $address_line2 = $size = "";
+$check = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name1"])) {
