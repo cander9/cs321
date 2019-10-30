@@ -154,9 +154,9 @@ function test_input($data) {
             <label>These are my checkboxes:</label>
             <p></p>
             <div id="errorcheck" class="error"><?php echo "<p class='note'>". $checkERR;?></div>
-            <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['check'][0])) echo "checked" ?> value="here"> here<br>
-            <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['check'][1])) echo "checked" ?> value="they"> they<br>
-            <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['check'][2])) echo "checked" ?> value="are"> are<br>
+            <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) &&$_POST['check'][0]) echo "checked" ?> value="here"> here<br>
+            <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][1])) echo "checked" ?> value="they"> they<br>
+            <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) &&$_POST['check'][2]) echo "checked" ?> value="are"> are<br>
         </div>
         <!--<p></p>
         <div>
@@ -167,7 +167,7 @@ function test_input($data) {
         </div>
         <p></p>-->
     </fieldset>
-    <p><input type="submit" class="submit" onclick="checkAll();" value="Submit"/></p> 
+    <p><input type="submit" class="submit" onclick="checkAll();" value="Submit"/></p>
 </form>
 <footer>
     <a>copyright information</a>
