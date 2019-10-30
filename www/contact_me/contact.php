@@ -43,8 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phoneERR = "Phone number is required";
     } else {
         $phone = test_input(filter_var($_POST["phone"],FILTER_SANITIZE_NUMBER_INT));
-        $phonelength= strlen($phone);
-        if (!$phonelength==10){
+        if (!preg_match("/^\d{10}$/",$phone)) {
             $phoneERR = "Phone number must be 10 digits";
         }
     }
