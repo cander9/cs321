@@ -97,7 +97,6 @@ function test_input($data) {
     <link rel="stylesheet" href="/css/contactStyle.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script src="/javascript/forms.js"></script>
-</head>
 <body>
 <nav class="header">
     <a><h2>Name</h2></a>
@@ -108,7 +107,8 @@ function test_input($data) {
         <li class=crumb><a href = "bio">Bio</a></li>
     </ul>
     <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
-</nav>   <!-- I want the nav as a seperate column to the left -->
+</nav>   <!-- I want the nav as a separate column to the left -->
+</head>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"> <!-- https://www.w3schools.com/php/php_form_validation.asp -->
     <div>
         <label for="name1">Name : </label>
@@ -162,6 +162,14 @@ function test_input($data) {
             <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['check'][1]) && $_POST['check'][1] = "they") echo "checked" ?> value="they"> they<br>
             <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['check'][2]) && $_POST['check'][2] = "are") echo "checked" ?> value="are"> are<br>
         </div>
+        <!--<p></p>
+        <div>
+            <label>Describe :
+                <p></p>
+                <textarea class= "describe" name="describe"></textarea>
+            </label>
+        </div>
+        <p></p>-->
     </fieldset>
     <p><input type="submit" class="submit" value="Submit"/></p><!--onclick="checkAll();"-->
 </form>
