@@ -1,25 +1,3 @@
-<!doctype html>
-<html lang = "en">
-<head>
-
-    <!-- Author:  Caitlin Anderson
-         Purpose: CS321 Assignment 2 -->
-
-    <link rel="stylesheet" href="/css/contactStyle.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
-    <script src="/javascript/forms.js"></script>
-</head>
-<body>
-<nav class="header">
-    <a><h2>Name</h2></a>
-    <ul class="hov">
-        <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>
-        <li class=crumb><a href = "gallery 2">Gallery 2</a></li>
-        <li class=crumb><a href = "shop">Shop</a></li>
-        <li class=crumb><a href = "bio">Bio</a></li>
-    </ul>
-    <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
-</nav>   <!-- I want the nav as a seperate column to the left -->
 <?php
 // define variables and set to empty values
 $name1ERR = $phoneERR = $emailERR = $name2ERR = $address_line1ERR = $sizeERR = $checkERR = "";
@@ -61,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($_POST["name2"])) {
         $name2ERR = "Name is required";
-        } else {
+    } else {
         $name2 = test_input($_POST["name2"]);
         $name2length= strlen($name2);
         if ($name2length<3){
@@ -109,6 +87,28 @@ function test_input($data) {
     return $data;
 }
 ?>
+<!doctype html>
+<html lang = "en">
+<head>
+
+    <!-- Author:  Caitlin Anderson
+         Purpose: CS321 Assignment 2 -->
+
+    <link rel="stylesheet" href="/css/contactStyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
+    <script src="/javascript/forms.js"></script>
+</head>
+<body>
+<nav class="header">
+    <a><h2>Name</h2></a>
+    <ul class="hov">
+        <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>
+        <li class=crumb><a href = "gallery 2">Gallery 2</a></li>
+        <li class=crumb><a href = "shop">Shop</a></li>
+        <li class=crumb><a href = "bio">Bio</a></li>
+    </ul>
+    <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
+</nav>   <!-- I want the nav as a seperate column to the left -->
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"> <!-- https://www.w3schools.com/php/php_form_validation.asp -->
     <div>
         <label for="name1">Name : </label>
@@ -158,7 +158,7 @@ function test_input($data) {
             <label>These are my checkboxes:</label>
             <p></p>
             <div id="errorcheck" class="error"><?php echo "<p class='note'>". $checkERR;?></div>
-            <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['check'][0]) && $_POST['check'][0] = "here") echo "checked" ?> value="here"> here<br>
+            <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['check'][0]) && $_POST['check'][0] = "here") echo "checked"?> value="here"> here<br>
             <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['check'][1]) && $_POST['check'][1] = "they") echo "checked" ?> value="they"> they<br>
             <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['check'][2]) && $_POST['check'][2] = "are") echo "checked" ?> value="are"> are<br>
         </div>
