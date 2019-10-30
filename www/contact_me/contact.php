@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $size = test_input($_POST["size"]);
     }
 
-    if (count($_POST['check[]']) < 2){
+    if (count($_POST['check']) < 2){
         $checkERR = "Select at least two checkboxes";
     }
 }
@@ -151,9 +151,9 @@ function test_input($data) {
             <label>These are my checkboxes:</label>
             <div id="errorcheck" class="error"><?php echo $checkERR;?></div>
             <p></p>
-            <input id="check1" type="checkbox" name="check[]" value="here"> here<br>
-            <input id="check2" type="checkbox" name="check[]" value="they"> they<br>
-            <input id="check3" type="checkbox" name="check[]" value="are"> are<br>
+            <input id="check1" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][0])) echo "checked" ?> value="here"> here<br>
+            <input id="check2" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][1])) echo "checked" ?> value="they"> they<br>
+            <input id="check3" type="checkbox" name="check[]" <?php if(isset($_POST['submit']) && isset($_POST['check'][2])) echo "checked" ?> value="are"> are<br>
         </div>
         <p></p>
         <!--<div>
