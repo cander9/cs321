@@ -42,8 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["phone"])) {
         $phoneERR = "Phone number is required";
     } else {
-        $phone = test_input($_POST["phone"]);
+        $phone = test_input(filter_var($_POST["phone"],FILTER_SANITIZE_NUMBER_INT));
     }
+
 
     if (empty($_POST["email"])) {
         $emailERR = "Email is required";
@@ -56,9 +57,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($_POST["name2"])) {
         $name2ERR = "Name is required";
-    } else {
+        } else {
         $name2 = test_input($_POST["name2"]);
-        if (!preg_match("/^[a-zA-Z ]*$/",$name2)) {
+        $name2length= strlen($name2);
+        if ($name2length<3){
+            $name2ERR = "Name must be at least 3 letters";
+        }
+        else if (!preg_match("/^[a-zA-Z ]*$/",$name2)) {
             $name2ERR = "Only letters and white space allowed in name";
         }
     }
