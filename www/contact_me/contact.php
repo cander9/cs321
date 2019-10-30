@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if (isset($_POST['check'])) {
         $check = $_POST['check'];
-        if(empty($_POST['check'])){
+        if (count($_POST['check']) < 1) {
             $checkERR = "Select at least two checkboxes";
         }
         else if (count($_POST['check']) < 2) {
