@@ -1,4 +1,4 @@
-< ?php include 'http://anderscr.cs321.simmons.edu/header.php'; ?>
+< ?php include 'http://anderscr.cs321.simmons.edu/header.php';
 
 <!doctype html>
 
@@ -22,4 +22,4 @@
 
 </html>
 
-< ?php include 'http://anderscr.cs321.simmons.edu/footer.php'; ?>
+php include 'http://anderscr.cs321.simmons.edu/footer.php'; ?>
