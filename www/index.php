@@ -1,9 +1,27 @@
-< ?php include 'http://anderscr.cs321.simmons.edu/header.php';
-
 <!doctype html>
 
-<html lang="en">
-<div>
+<html lang = "en">
+<head>
+
+    <!-- Author:  Caitlin Anderson
+         Purpose: CS321 Assignment-->
+
+    <link rel="stylesheet" href="/css/contactStyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
+    <script src="/javascript/forms.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav class="header">
+        <a><h2>Name</h2></a>
+        <ul class="hov">
+            <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>
+            <li class=crumb><a href = "gallery 2">Gallery 2</a></li>
+            <li class=crumb><a href = "shop">Shop</a></li>
+            <li class=crumb><a href = "bio">Bio</a></li>
+        </ul>
+        <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
+    </nav>
+</head>
+</html><div>
     <ul id="test">
         <li class="container">
             <img src="http://anderscr.cs321.simmons.edu/images/IMG01.JPG" alt="Piece1" width=300>
@@ -19,7 +37,8 @@
         </li>
     </ul>
 </div> <!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
-
+<footer>
+    <a>copyright information</a>
+    <a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php" class="contact">Contact Me</a>
+</footer>
 </html>
-
-php include 'http://anderscr.cs321.simmons.edu/footer.php'; ?>
