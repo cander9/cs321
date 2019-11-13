@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 
 <html lang="en">
 <head>
@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script src="/javascript/myscripts.js"></script>
-</head>
-<body>
-<header>
     <nav class="header">
         <a><h2>Name</h2></a>
         <ul class="hov">
@@ -22,9 +19,10 @@
         </ul>
         <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
     </nav>   <!-- I want the nav as a seperate column to the left -->
+</head>
+<body>
     <h1>Gallery 1</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</header>   <!-- will be a description of the gallery in final -->
 <div>
     <ul id="test">
         <li class="container">
