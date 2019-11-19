@@ -9,9 +9,6 @@
   <div>
     <img   src="http://anderscr.cs321.simmons.edu/images/IMG1.JPG" width=600/>
   </div>   <!-- will be a picture of the art in final, I want it centered and big-->
-  <footer>
-    <a>copyright information</a>
-    <a href="http://anderscr.cs321.simmons.edu/contact_me/contact.php" class="contact">Contact Me</a>
-  </footer>
+<?php include('footer.php'); ?>
 </body>     
 </html><!-- I got the section names, nav, aside, footer, etc from https://www.w3schools.com/html/html_layout.asp -->
