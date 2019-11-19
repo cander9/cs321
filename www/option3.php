@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-#include file="header.php"
+<?php include('header.php'); ?>
 <body>
 <div>
     <ul id="test">
