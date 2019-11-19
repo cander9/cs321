@@ -15,7 +15,6 @@
         <ul class="hov">
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/option3.php">Gallery 2</a></li>
-            <li class=crumb><a href = "shop">Shop</a></li>
             <li class=crumb><a href = "bio">Bio</a></li>
         </ul>
         <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
