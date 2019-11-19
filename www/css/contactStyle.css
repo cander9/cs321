@@ -191,6 +191,33 @@ textarea:focus{
 
 @media only screen and (max-width: 600px){
     fieldset {
-        max-width: 330px;
+        max-width: -webkit-fill-available;
     }
 }
+
+div {
+  padding: 15px 16px;
+  text-align: center; 
+  max-width: 980px;
+  /*background-color: #EFEFF0;*/
+}
+
+.container {
+  position:relative;
+  display: block;
+  vertical-align: middle;
+  padding: 15px 16px;
+} 
+
+.closerLook {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 183px 128px;
+  opacity:0;
+  width: 300;
+  background-color: #EFEFF0;
+  
+}
+
