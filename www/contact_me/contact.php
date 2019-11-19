@@ -89,7 +89,7 @@ function test_input($data) {
 ?>
 <!doctype html>
 <html lang = "en">
-<?php include('header.php'); ?>
+<?php include('../header.php'); ?>
 <body>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"> <!-- https://www.w3schools.com/php/php_form_validation.asp -->
     <div>
@@ -155,6 +155,6 @@ function test_input($data) {
     </fieldset>
     <p><input type="submit" class="submit" value="Submit"/></p><!--onclick="checkAll();"-->
 </form>
-<?php include('footer.php'); ?>
+<?php include('../footer.php'); ?>
 </body>
 </html>
