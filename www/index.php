@@ -21,5 +21,5 @@
         </li>
     </ul>
 </div> <!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
-<?php include('header.php'); ?>
+<?php include('footer.php'); ?>
 </html>
