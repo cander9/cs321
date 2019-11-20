@@ -104,16 +104,6 @@
     </blockquote>
     <script async src="//www.instagram.com/embed.js"></script>
 </div> <!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-
-    <channel>
-        <title>weather</title>
-        <link>https://weather.com/weather/tenday/l/Boston+MA?canonicalCityId=6320cadd3d539b434b5a45c094becf3edbe8ea88958185a2287a801115c9ae30</link>
-        <description>here's a live feed</description>
-    </channel>
-
-</rss>
 <?php include('footer.php'); ?>
 </body>
 </html>
