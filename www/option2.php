@@ -3,7 +3,7 @@
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-<div class=instaEmbed>
+<div>
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;">
             <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                 <div style=" display: flex; flex-direction: row; align-items: center;">
@@ -54,11 +54,9 @@
         </div>
     </blockquote>
     <script async src="//www.instagram.com/embed.js"></script>
-</div> 
-<div class=instaEmbed>    
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EvfEwnq9T/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;">
             <a href="https://www.instagram.com/p/B5EvfEwnq9T/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;"> 
+                <div style=" display: flex; flex-direction: row; align-items: center;">
                     <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                     <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
                         <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
@@ -105,8 +103,22 @@
         </div>
     </blockquote>
     <script async src="//www.instagram.com/embed.js"></script>
-</div>    
 </div> <!-- However Many I need --><!--Code Source:  https://www.w3schools.com/howto/howto_css_button_on_image.asp    eventually I want to be able to click on the img rather than have a separate button-->
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Instagram</title>
+        <link>https://www.instagram.com/just.for.cs321/</link>
+        <description>Here is an instagram account with more art</description>
+        <item>
+            <title>just.for.cs321</title>
+            <link>https://www.instagram.com/just.for.cs321/</link>
+            <description>Stuff</description>
+        </item>
+    </channel>
+
+</rss>
 <?php include('footer.php'); ?>
 </body>
 </html>
