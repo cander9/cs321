@@ -111,11 +111,6 @@
         <title>weather</title>
         <link>https://weather.com/weather/tenday/l/Boston+MA?canonicalCityId=6320cadd3d539b434b5a45c094becf3edbe8ea88958185a2287a801115c9ae30</link>
         <description>here's a live feed</description>
-        <item>
-            <title>tadaa</title>
-            <link>https://weather.com/weather/tenday/l/Boston+MA?canonicalCityId=6320cadd3d539b434b5a45c094becf3edbe8ea88958185a2287a801115c9ae30</link>
-            <description>Stuff</description>
-        </item>
     </channel>
 
 </rss>
