@@ -1,30 +1,95 @@
 <?php
-function feed($feedURL){
-    $i = 0; // initiate counter to limit the amount of articles to return
-    $url = $feedURL; // url to parse
-    $rss = simplexml_load_file($url); // the XML parser
-    // RSS items loop
-    foreach($rss->channel->item as $item) {  //loop through each item
-        $link = $item->link;  //extract the link
-        $title = $item->title;  //extract the title
-        $date = $item->pubDate;  //extract the date
-        $description = strip_tags($item->description);  //extract description and strip HTML
-        if (strlen($description) > 200) {
-            // truncate string if greater than 200 characters
-            $stringCut = substr($description, 0, 200);
-            // make sure it ends in a complete word and add ... at the end
-            $description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';
+// Check http://www.systutorials.com/136102/a-php-function-for-fetching-rss-feed-and-outputing-feed-items-as-html/ for description
+// RSS to HTML
+/*
+    $tiem_cnt: max number of feed items to be displayed
+    $max_words: max number of words (not real words, HTML words)
+    if <= 0: no limitation, if > 0 display at most $max_words words
+ */
+function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0, $cache_timeout = 7200, $cache_prefix = "/tmp/rss2html-")
+{
+    $result = "";
+    // get feeds and parse items
+    $rss = new DOMDocument();
+    $cache_file = $cache_prefix . md5($feed_url);
+    // load from file or load content
+    if ($cache_timeout > 0 &&
+        is_file($cache_file) &&
+        (filemtime($cache_file) + $cache_timeout > time())) {
+            $rss->load($cache_file);
+    } else {
+        $rss->load($feed_url);
+        if ($cache_timeout > 0) {
+            $rss->save($cache_file);
         }
-        if ($i < 4) { // parse only 4 items
-            echo '
-                        <a class="list-group-item" href="'.$link.'" target="_blank">
-                            <h5 class="list-group-item-heading">'.$title.'<br><small>'.$date.'</small></h5>
-                            <p class="list-group-item-text">'.$description.'</p>
-                        </a>
-                        ';
-        }
-        $i++;
     }
+    $feed = array();
+    foreach ($rss->getElementsByTagName('item') as $node) {
+        $item = array (
+            'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+            'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+            'content' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+            'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+            'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+        );
+        $content = $node->getElementsByTagName('encoded'); // <content:encoded>
+        if ($content->length > 0) {
+            $item['content'] = $content->item(0)->nodeValue;
+        }
+        array_push($feed, $item);
+    }
+    // real good count
+    if ($max_item_cnt > count($feed)) {
+        $max_item_cnt = count($feed);
+    }
+    $result .= '<ul class="feed-lists">';
+    for ($x=0;$x<$max_item_cnt;$x++) {
+        $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+        $link = $feed[$x]['link'];
+        $result .= '<li class="feed-item">';
+        $result .= '<div class="feed-title"><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong></div>';
+        if ($show_date) {
+            $date = date('l F d, Y', strtotime($feed[$x]['date']));
+            $result .= '<small class="feed-date"><em>Posted on '.$date.'</em></small>';
+        }
+        if ($show_description) {
+            $description = $feed[$x]['desc'];
+            $content = $feed[$x]['content'];
+            // find the img
+            $has_image = preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $content, $image);
+            // no html tags
+            $description = strip_tags(preg_replace('/(<(script|style)\b[^>]*>).*?(<\/\2>)/s', "$1$3", $description), '');
+            // whether cut by number of words
+            if ($max_words > 0) {
+                $arr = explode(' ', $description);
+                if ($max_words < count($arr)) {
+                    $description = '';
+                    $w_cnt = 0;
+                    foreach($arr as $w) {
+                        $description .= $w . ' ';
+                        $w_cnt = $w_cnt + 1;
+                        if ($w_cnt == $max_words) {
+                            break;
+                        }
+                    }
+                    $description .= " ...";
+                }
+            }
+            // add img if it exists
+            if ($has_image == 1) {
+                $description = '<img class="feed-item-image" src="' . $image['src'] . '" />' . $description;
+            }
+            $result .= '<div class="feed-description">' . $description;
+            $result .= ' <a href="'.$link.'" title="'.$title.'">Continue Reading &raquo;</a>'.'</div>';
+        }
+        $result .= '</li>';
+    }
+    $result .= '</ul>';
+    return $result;
+}
+function output_rss_feed($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0)
+{
+    echo get_rss_feed_as_html($feed_url, $max_item_cnt, $show_date, $show_description, $max_words);
 }
 ?>
 
@@ -34,7 +99,7 @@ function feed($feedURL){
 <?php include('header.php'); ?>
 <body>
 <div>
-    <?php feed("https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml") ?>
+    <?php get_rss_feed_as_html(https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml)?>
 </div>
 <?php include('footer.php'); ?>
 </body>
