@@ -216,5 +216,16 @@ textarea:focus{
 
 .instaEmbed {    
     vertical-align: middle;
-}    
+} 
+
+.list-group-item {
+  color:black;
+  text-decoration:none
+} 
+
+.list-group-item-heading{
+  color:blue;
+  text-decoration:underline;
+}
+
 
