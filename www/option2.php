@@ -32,9 +32,7 @@ function feed($feedURL){
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-<div>
-    <?php feed("https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml") ?>
-</div>
+<?php feed("https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml") ?>
 <?php include('footer.php'); ?>
 </body>
 </html>
