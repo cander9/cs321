@@ -4,11 +4,11 @@ function feed($feedURL){
     $url = $feedURL;
     $rss = simplexml_load_file($url);
     // RSS items loop
-    foreach($rss->channel->item as $item) {  //loop through each item
-        $link = $item->link;  //extract the link
-        $title = $item->title;  //extract the title
-        $date = $item->pubDate;  //extract the date
-        $description = $item->description;  //extract description and strip HTML
+    foreach($rss->channel->item as $item) {
+        $link = $item->link;
+        $title = $item->title;
+        $date = $item->pubDate;
+        $description = $item->description;
         echo '
 <a class="list-group-item" href="'.$link.'" target="_blank">
     <h5 class="list-group-item-heading">'.$title.'<br><small>'.$date.'</small></h5>
