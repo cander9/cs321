@@ -99,7 +99,7 @@ function output_rss_feed($feed_url, $max_item_cnt = 10, $show_date = true, $show
 <?php include('header.php'); ?>
 <body>
 <div>
-    <?php get_rss_feed_as_html('https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml')?>
+    <?php get_rss_feed_as_html("https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml",20, true, true, 200)?>
 </div>
 <?php include('footer.php'); ?>
 </body>
