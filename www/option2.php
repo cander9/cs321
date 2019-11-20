@@ -20,7 +20,7 @@ function feed($feedURL){
     foreach($rss->channel->image as $item){
         $IMAGEurl = $item->url;
         echo '
-        <a <img>href="'.$IMAGEurl.'" target="_blank"</img>
+        <a <img src="'.$IMAGEurl.'" alt="map"/>
         </a>
         ';
     }
