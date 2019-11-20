@@ -35,6 +35,7 @@ function feed($feedURL){
 <body>
 <div>
     <?php feed("https://ptwc.weather.gov/feeds/ptwc_rss_hawaii.xml") ?>
+    <?php feed("http://weather.gov/images/xml_logo.gif") ?>
 </div>
 <?php include('footer.php'); ?>
 </body>
