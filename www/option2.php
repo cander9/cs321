@@ -10,18 +10,23 @@ function feed($feedURL){
         $date = $item->pubDate;  //extract the date
         $description = strip_tags($item->description);  //extract description and strip HTML
         echo '
-        <a class="list-group-item" href="'.$link.'" target="_blank">
-             <h5 class="list-group-item-heading">'.$title.'<br><small>'.$date.'</small></h5>
-             <p class="list-group-item-text">'.$description.'</p>
-        </a>
+<a class="list-group-item" href="'.$link.'" target="_blank">
+    <h5 class="list-group-item-heading">'.$title.'<br><small>'.$date.'</small></h5>
+    <p class="list-group-item-text">'.$description.'</p>
+</a>
         ';
     }
 
     foreach($rss->channel->image as $item){
         $IMAGEurl = $item->url;
+        $IMAGEalt = $item->title;
+        $IMAGElink = $item->link;
         echo '
-        <a <img src="'.$IMAGEurl.'" alt="map"/>
-        </a>
+<img>
+    <url>'.$IMAGEurl.'</url>
+    <title>'.$IMAGEalt.'</title>
+    <link>'.$IMAGElink.'</link>
+</img>
         ';
     }
 }
