@@ -108,12 +108,12 @@
 <rss version="2.0">
 
     <channel>
-        <title>Instagram</title>
-        <link>https://www.instagram.com/just.for.cs321/</link>
-        <description>Here is an instagram account with more art</description>
+        <title>weather</title>
+        <link>https://weather.com/weather/tenday/l/Boston+MA?canonicalCityId=6320cadd3d539b434b5a45c094becf3edbe8ea88958185a2287a801115c9ae30</link>
+        <description>here's a live feed</description>
         <item>
-            <title>just.for.cs321</title>
-            <link>https://www.instagram.com/just.for.cs321/</link>
+            <title>tadaa</title>
+            <link>https://weather.com/weather/tenday/l/Boston+MA?canonicalCityId=6320cadd3d539b434b5a45c094becf3edbe8ea88958185a2287a801115c9ae30</link>
             <description>Stuff</description>
         </item>
     </channel>
