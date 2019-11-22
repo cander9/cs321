@@ -3,7 +3,8 @@
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+<span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
     <div style="padding:16px;">
         <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
             <div style=" display: flex; flex-direction: row; align-items: center;">
@@ -59,6 +60,7 @@
 
         Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Viverra aliquet eget sit amet tellus cras adipiscing enim. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Porttitor lacus luctus accumsan tortor posuere ac. Et molestie ac feugiat sed lectus vestibulum. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Quis imperdiet massa tincidunt nunc. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Amet dictum sit amet justo donec enim diam.</p>
 </div>
+</span>
 <?php include('footer.php'); ?>
 </body>
 </html>
