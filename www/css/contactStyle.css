@@ -238,3 +238,13 @@ textarea:focus{
   transform: translate(8%,3%);
 }
 
+.bio{
+  float:right;
+  transform: translate(-10%,-138%);
+
+}
+
+.bio p{
+  max-width:326px;
+}
+
