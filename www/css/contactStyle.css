@@ -233,15 +233,11 @@ textarea:focus{
   transform: translate(2%);
 }
 
-.cat{
-  transform: translate(8%,3%);
+.bioLi{
+    display: block;
+    padding: 15px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    max-width:326px;
+    float:left
 }
-
-.bio{
-float:right;
-}
-
-.bio p{
-  max-width:326px;
-}
-
