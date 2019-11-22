@@ -53,7 +53,7 @@
     </div>
 </blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
-<div>
+<divclass="bio" >
     <h1>Caitlin Anderson</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est. Eu turpis egestas pretium aenean pharetra. Fringilla ut morbi tincidunt augue interdum velit euismod in. Nisl rhoncus mattis rhoncus urna neque. Mus mauris vitae ultricies leo integer. Mi bibendum neque egestas congue quisque egestas diam in. Justo nec ultrices dui sapien eget mi proin sed. Etiam tempor orci eu lobortis elementum nibh tellus molestie. Ornare aenean euismod elementum nisi quis eleifend. Maecenas sed enim ut sem viverra. Nunc sed velit dignissim sodales ut eu sem integer vitae. Tortor condimentum lacinia quis vel eros. Quis viverra nibh cras pulvinar mattis nunc sed.
 
