@@ -3,7 +3,7 @@
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-  <p>testing</p>
+  <img>src="http://anderscr.cs321.simmons.edu/images/IMG_2738.jpeg" alt="cat"</img>
 <?php include('footer.php'); ?>
 </body>
 </html>
