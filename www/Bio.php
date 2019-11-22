@@ -3,8 +3,7 @@
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-<img src="http://anderscr.cs321.simmons.edu/images/catRotated.JPG" alt="cat" width=225 height=300 class="cat" />
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
     <div style="padding:16px;">
         <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
             <div style=" display: flex; flex-direction: row; align-items: center;">
