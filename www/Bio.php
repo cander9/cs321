@@ -3,7 +3,7 @@
 <html lang="en">
 <?php include('header.php'); ?>
 <body>
-<span>
+<div>
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
     <div style="padding:16px;">
         <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -58,7 +58,7 @@
     <h1>Caitlin Anderson</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est. Eu turpis egestas pretium aenean pharetra. Fringilla ut morbi tincidunt augue interdum velit euismod in. Nisl rhoncus mattis rhoncus urna neque. Mus mauris vitae ultricies leo integer. Mi bibendum neque egestas congue quisque egestas diam in. Justo nec ultrices dui sapien eget mi proin sed. Etiam tempor orci eu lobortis elementum nibh tellus molestie. Ornare aenean euismod elementum nisi quis eleifend. Maecenas sed enim ut sem viverra. Nunc sed velit dignissim sodales ut eu sem integer vitae. Tortor condimentum lacinia quis vel eros. Quis viverra nibh cras pulvinar mattis nunc sed.</p>
 </div>
-</span>
+</div>
 <?php include('footer.php'); ?>
 </body>
 </html>
