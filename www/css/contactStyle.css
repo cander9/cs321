@@ -228,4 +228,7 @@ textarea:focus{
   text-decoration:underline;
 }
 
+.galleryDescription{
+  max-width: 1000px;
+}
 
