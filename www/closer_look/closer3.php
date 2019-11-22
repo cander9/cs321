@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+<?php include('closerHead.php'); ?>
 <body>
     <a href="http://anderscr.cs321.simmons.edu/" class="x">x</a>
     <ul class="closeUP">
