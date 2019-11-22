@@ -239,9 +239,7 @@ textarea:focus{
 }
 
 .bio{
-  float:right;
-  transform: translate(-10%,-138%);
-
+float:right;
 }
 
 .bio p{
