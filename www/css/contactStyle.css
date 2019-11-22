@@ -230,7 +230,7 @@ textarea:focus{
 }
 
 .galleryDescription{
-  max-width: 980px;
+  max-width: 960px;
   transform: translate(2%);
 }
 
