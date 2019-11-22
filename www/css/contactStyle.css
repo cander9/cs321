@@ -238,6 +238,14 @@ textarea:focus{
     padding: 15px 16px;
     text-decoration: none;
     vertical-align: middle;
-    max-width:326px;
     float:left
+    position:relative;
+    max-width: 600px;
 }
+
+@media only screen and (max-width: 1020px){
+  .bioLi{
+      max-width: 326px;
+  }
+}
+
