@@ -234,3 +234,7 @@ textarea:focus{
   transform: translate(2%);
 }
 
+.cat{
+  transform: translate(8%,3%);
+}
+
