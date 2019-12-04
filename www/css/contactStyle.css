@@ -253,7 +253,7 @@ textarea:focus{
   position:relative;
   text-decoration:none;
   color:black;
-  float:right;
+  float:left;
   font-size:1.25em;
 }
 
