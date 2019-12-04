@@ -277,6 +277,6 @@ textarea:focus{
 }
 
 .big{
-  -ms-transform: translateX(50%);
-  transform: translateX(11%);
+  position:absolute;
+  left: 61px;
 }
