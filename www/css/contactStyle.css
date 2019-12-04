@@ -267,6 +267,15 @@ textarea:focus{
   transform: translateY(-50%);
 }
 
+.next{
+  font-size:1.12em;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right:130px;
+}
+
 .big{
   -ms-transform: translateX(50%);
   transform: translateX(11%);
