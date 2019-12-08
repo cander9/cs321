@@ -8,7 +8,7 @@
     <script src="/javascript/forms.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <nav class="header">
-        <a><h2>Name</h2></a>
+        <a><h2>Caitlin Anderson</h2></a>
         <ul class="hov">
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>            
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/Bio.php">About</a></li>
