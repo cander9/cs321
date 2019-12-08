@@ -4,14 +4,10 @@ function OpenCon()
     $dbhost = "localhost";
     $dbuser = "anderscr";
     $dbpass = "1834579";
-    $db = "iFrameURLs";
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass,$db);
+    $db = "db_anderscr";
+    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    echo "Connected successfully";
-
+    return $conn;
 }
 
 function CloseCon($conn)
