@@ -1,11 +1,9 @@
 <?php
-$i = 1;
 include 'db_connection.php';
 $conn = OpenCon();
 $qry = mysqli_query($conn, "SELECT * FROM iFrameURLs");
 while ($row = $qry->fetch_assoc()) {
-    echo $row[$i]."<br>";
-    $i++;
+    echo $row['url']."<br>";
 }
 CloseCon($conn);
 
