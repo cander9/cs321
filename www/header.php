@@ -10,7 +10,7 @@
     <nav class="header">
         <a><h2>Caitlin Anderson</h2></a>
         <ul class="hov">
-            <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery 1</a></li>            
+            <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery</a></li>            
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/Bio.php">About</a></li>
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php">Contact Me</a></li>
         </ul>
