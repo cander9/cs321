@@ -1,5 +1,5 @@
 <?php
-$url = feed($urlArray);
+
 $urlArray = array();
 include 'db_connection.php';
 $conn = OpenCon();
@@ -12,6 +12,8 @@ function feed($urlArray){
     $num = rand(0,6);
     return($urlArray[$num]);
 }
+
+$url = feed($urlArray);
 CloseCon($conn);
 
 ?>
