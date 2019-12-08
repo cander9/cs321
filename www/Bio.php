@@ -8,7 +8,7 @@ while ($row = $qry->fetch_assoc()) {
 }
 
 function feed($urlArray){
-    $num = rand(1,7);
+    $num = rand(0,6);
     echo($urlArray[$num]);
 }
 feed($urlArray);
