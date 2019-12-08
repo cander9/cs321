@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $size = test_input($_POST["size"]);
     }
 
-    if(empty($_POST['check'])){
+/*   if(empty($_POST['check'])){
         $checkERR = "Select at least two checkboxes";
     }
     else if (isset($_POST['check'])) {
@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (count($_POST['check']) < 2) {
             $checkERR = "Select at least two checkboxes";
         }
-    }
+    }*/
 }
 
 
@@ -135,7 +135,7 @@ function test_input($data) {
             <input id="radio2" type="radio" name="size" <?php if (isset($size) && $size=="medium") echo "checked";?> value="medium"> Medium &#40;16X20 in. or comparable&#41;<br>
             <input id="radio3" type="radio" name="size" <?php if (isset($size) && $size=="large") echo "checked";?> value="large"> Larger than 16X20 &#40;please specify in your description&#41;<br>
         </div>
-        <div>
+        <!--<div>
             <p></p>
             <label>These are my checkboxes:</label>
             <p></p>
@@ -143,7 +143,7 @@ function test_input($data) {
             <input id="check1" type="checkbox" name="check[0]" <?php if(isset($_POST['check'][0]) && $_POST['check'][0] = "here") echo "checked"?> value="here"> here<br>
             <input id="check2" type="checkbox" name="check[1]" <?php if(isset($_POST['check'][1]) && $_POST['check'][1] = "they") echo "checked" ?> value="they"> they<br>
             <input id="check3" type="checkbox" name="check[2]" <?php if(isset($_POST['check'][2]) && $_POST['check'][2] = "are") echo "checked" ?> value="are"> are<br>
-        </div>
+        </div>-->
         <!--<p></p>
         <div>
             <label>Describe :
