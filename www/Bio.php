@@ -2,7 +2,7 @@
 
 include 'db_connection.php';
 $conn = OpenCon();
-echo "Connected Successfully";
+$qry = mysqli_query($conn, "SELECT * FROM iFrameURLs");
 CloseCon($conn);
 
 ?>
