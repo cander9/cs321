@@ -1,4 +1,5 @@
 <?php
+$url = feed($urlArray);
 $urlArray = array();
 include 'db_connection.php';
 $conn = OpenCon();
@@ -9,9 +10,8 @@ while ($row = $qry->fetch_assoc()) {
 
 function feed($urlArray){
     $num = rand(0,6);
-    echo($urlArray[$num]);
+    return($urlArray[$num]);
 }
-feed($urlArray);
 CloseCon($conn);
 
 ?>
@@ -22,9 +22,9 @@ CloseCon($conn);
 <?php include('header.php'); ?>
 <body>
 <ul>
-    <li class="bioLi" ><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+    <li class="bioLi" ><blockquote class="instagram-media" data-instgrm-permalink="<?php echo($url); ?>" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:326px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
             <div style="padding:16px;">
-                <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <a href="<?php echo($url); ?>" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                     <div style=" display: flex; flex-direction: row; align-items: center;">
                         <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                         <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -67,7 +67,7 @@ CloseCon($conn);
                     </div>
                 </a>
                 <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    <a href="https://www.instagram.com/p/B5EyYGKH62w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @just.for.cs321</a>
+                    <a href="<?php echo($url); ?>" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @just.for.cs321</a>
                 </p>
 </div>
 </blockquote>
