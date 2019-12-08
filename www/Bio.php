@@ -3,7 +3,7 @@
 include 'db_connection.php';
 $conn = OpenCon();
 $qry = mysqli_query($conn, "SELECT * FROM iFrameURLs");
-echo($qry);
+echo("$qry");
 CloseCon($conn);
 
 ?>
