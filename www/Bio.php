@@ -1,10 +1,17 @@
 <?php
+$urlArray = array();
 include 'db_connection.php';
 $conn = OpenCon();
 $qry = mysqli_query($conn, "SELECT * FROM iFrameURLs");
 while ($row = $qry->fetch_assoc()) {
-    echo $row['url']."<br>";
+    array_push($urlArray,$row['url']);
 }
+
+function feed($urlArray){
+    $num = rand();
+    echo($urlArray[$num]);
+}
+feed($urlArray);
 CloseCon($conn);
 
 ?>
