@@ -4,7 +4,7 @@ include 'db_connection.php';
 $conn = OpenCon();
 $qry = mysqli_query($conn, "SELECT * FROM iFrameURLs");
 while ($row = $qry->fetch_assoc()) {
-    echo $row['classtype']."<br>";
+    echo $row['varchar']."<br>";
 }
 CloseCon($conn);
 
