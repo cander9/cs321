@@ -9,7 +9,7 @@ while ($row = $qry->fetch_assoc()) {
 }
 
 function feed($urlArray){
-    $num = rand(0,6);
+    $num = rand(0,9);
     return($urlArray[$num]);
 }
 
