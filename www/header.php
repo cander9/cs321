@@ -2,7 +2,7 @@
 
     <!-- Author:  Caitlin Anderson
          Purpose: CS321 Assignment-->
-    <title>Landing Page</title>
+    <title>Caitlin Anderson cs321</title>
     <link rel="stylesheet" href="/css/contactStyle.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script src="/javascript/forms.js"></script>
