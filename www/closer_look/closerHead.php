@@ -2,7 +2,7 @@
 
     <!-- Author:  Caitlin Anderson
          Purpose: CS321 Final-->
-
+    <title>Caitlin Anderson cs321</title>
     <link rel="stylesheet" href="/css/contactStyle.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script>
