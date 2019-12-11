@@ -44,7 +44,7 @@ CloseCon($conn);
                         </svg>
                     </div>
                     <div style="padding-top: 8px;">
-                        <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div>
+                        <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; line-height:18px;"> View this post on Instagram</div>
                     </div>
                     <div style="padding: 12.5% 0;"></div>
                     <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
