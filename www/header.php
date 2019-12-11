@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i&display=swap" rel="stylesheet">
     <script src="/javascript/forms.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="header">
+</head>
+<body>
+    <nav>
         <a><h2>Caitlin Anderson</h2></a>
         <ul class="hov">
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/">Gallery</a></li>            
@@ -15,5 +17,5 @@
             <li class=crumb><a href = "http://anderscr.cs321.simmons.edu/contact_me/contact.php">Contact Me</a></li>
         </ul>
         <!-- source:  https://developer.mozilla.org/enUS/docs/Web/HTML/Element/nav -->
-    </div>
-</head>
+    </nav>
+
