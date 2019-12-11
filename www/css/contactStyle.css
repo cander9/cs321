@@ -17,7 +17,7 @@ h2 {
 }
 
 /*navigation bar*/
-.header {
+nav {
     overflow: hidden;
     padding: 10px 10px;
     /*background-color: #EFEFF0;*/
@@ -35,7 +35,7 @@ li {
     float: left;
 }
 
-.header a h2 {
+nav a h2 {
     float: left;
     padding: 0px 16px;
 }
