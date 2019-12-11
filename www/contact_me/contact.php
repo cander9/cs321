@@ -90,7 +90,6 @@ function test_input($data) {
 <!doctype html>
 <html lang = "en">
 <?php include('../header.php'); ?>
-<body>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"> <!-- https://www.w3schools.com/php/php_form_validation.asp -->
     <div>
         <label for="name1">Name : </label>
